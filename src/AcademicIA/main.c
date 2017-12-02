@@ -1,8 +1,83 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "aluno.h"
 
 int main()
 {
-    printf("Hello world!\n");
+    aluno_t* vetor_aluno[500];
+    //aluno_t aluno1;
+    //cria_aluno();
+    vetor_aluno[0] = cria_aluno();
     return 0;
 }
+/*
+vetor_alunos[]
+
+struct aluno{
+	matricula
+	nome
+	semestre entrada
+	curso
+	grade de materia
+	indice_A
+	situacao (ativo, trancado, jubilado, cancelado)
+	disciplinas_cursadas[get_qtd_uc_da_grade]
+}
+cria_aluno()
+ler_alunos_do_txt()
+print_aluno()
+
+deleta aluno()
+get_matricula
+
+
+
+
+struct unidade_curricular{
+	codigo
+	nome
+	turma
+	conceito
+	faltas
+	frequencia
+	origem
+	situacao (apto, nao-apto, )
+	Carga Horaria
+
+	cria_aluno()
+ler_alunos_do_txt()
+print_aluno()
+
+deleta aluno()
+get_matricula
+
+
+
+
+struct unidade_curricular{
+	codigo
+	nome
+	turma
+	conceito
+	faltas
+	frequencia
+	origem
+	situacao (apto, nao-apto, )
+	Carga Horaria
+}
+
+funcoes:
+
+print_quicksort_by_semester(); (em documento);
+print_quicksort_by_ia(); (em documento);
+print_quicksort_by_matricula(); (em documento);
+print_quicksort_by_name(); (em documento);
+print_quicksort_by_curso(); (em documento);
+// (essas funcoes devem retornar em ordem alfabetica)
+
+adiciona uc(aluno, )
+	-atualiza IA;
+
+remove uc(aluno, )
+}
+*/
