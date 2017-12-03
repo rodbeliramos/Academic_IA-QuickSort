@@ -1,0 +1,63 @@
+Semestre;Codigo;Nome;CH
+1;CAA22101;Calculo A;108
+1;GMT22101;Geometria Analitica;54
+1;QMG22101;Quimica Geral;54
+1;COM22101;Comunicação e Expressão;36
+1;EGS22101;Eng. E Sustentabilidade;36
+1;ELD22101;Eletrônica Digital I;72
+1;PIN22101;Projeto Integrador I;36
+2;CAB22102;Cálculo B;72
+2;FFM22102;Fund. De FSC em Mecânica;108
+2;ALG22102;Álgebra Linear;54
+2;DST22102;Desenho Técnico;36
+2;CEL22102;Circuitos Eléticos I;72
+2;ELD22102;Eletrônica Digital II;72
+3;MEP22103;Metodologia de Pesquisa;36
+3;ETP22103;Estatística e Probabilidade;54
+3;CAV22103;Cálculo Vetorial;72
+3;FFE22103;Fund. De Físi em Eletricid.;108
+3;MCS22103;Mecância dos Sólidos;36
+3;CEL22103;Circuitos Elétricos II;54
+3;SEG22103;Asp. De Seg. Em Eletricid.;36
+4;PRG22104;Programação de Comp. I;54
+4;CAL22104;Equações Diferenciais;72
+4;FFT22104;Fund. Fsc em Tem. E Ondas;108
+4;CEL22104;Circuitos Elétricos III;54
+4;ELN22104;Eletrônica I;72
+4;ARQ22104;Arq. De Computadores;36
+4;PIN22104;Projeto Integrador II;36
+5;CTM22105;Ciência e Tec. Dos Materiais;36
+5;FNT22105;Fenômenos de Transporte;36
+5;ELN22105;Eletrônica II;72
+5;FMD22105;Fund. Em Física Moderna;36
+5;EMG22105;Eletromagnetismo I;72
+5;PRG22105;Programação de Comp. II;72
+5;MCP22105;Microprocessadores;72
+6;CEE22106;Conv. Eletromec. De Energia;90
+6;SIS22106;Sinais e Sistemas;72
+6;CPC22106;Computação Científica;54
+6;MCC22106;Microcontroladores I;72
+6;ELN22106;Eletrônica III;72
+6;INE22106;Instrumentação Eletrônica;54
+7;ECN22107;Economia para Engenharia;36
+7;ANT22107;Princípios de Antenas;54
+7;SCT22107;Sistemas de Controle I;72
+7;PRG22107;Prog. Orientada a Objetis;54
+7;DSP22107;Proc. Digital de Sinais I;72
+7;MCC22107;Microcontroladores II;72
+7;PIN22107;Projeto Integrador III;36
+8;ADM22108;Administração para Eng.;36
+8;CTS22108;Ciência Tec. e Sociedade;36
+8;SCM22108;Sistemas de Comunicação;72
+8;SCT22108;Sistemas de Controle II;72
+8;ELP22108;Eletrônica de Potência I;72
+8;DSP22108;Proc. Digital de Sinais II;72
+8;RCP22108;Redes de Computadores;72
+9;CEM22109;Compatib. Eletromagnética;72
+9;PLD22109;Dispos Lógico-Programaveis;72
+9;ELP22109;Eletrônica de Potência II;72
+9;EMB22109;Sistemas Embarcados;72
+9;EMP22109;Empreend e Gerencia de Proj;36
+9;???;Disciplina Eletiva;72
+10;ETC22110;Estágio Curricular Obrigatório;160
+10;TCC22110;TCC;140
