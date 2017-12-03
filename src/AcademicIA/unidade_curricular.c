@@ -4,18 +4,16 @@
 #include "unidade_curricular.h"
 
 struct unidade_curricular {
-    uint8_t semestre;       //usar uint8_t -> Semestre < 255;
-    uint8_t codigo[9];      //COM22101 (Padrão: 3 letras da UC, 3 digitos do codigo do curso 2 digitos do semestre da uc.)
-    uint8_t* nome;
-    uint8_t carga_horaria;  //usar uint8_t -> Carga horária < 255;
-    void* previous;
-    void* next;
+    uint8_t     semestre;       //usar uint8_t -> Semestre < 255;
+    uint8_t     codigo[9];      //COM22101 (Padrão: 3 letras da UC, 3 digitos do codigo do curso 2 digitos do semestre da uc.)
+    uint8_t*    nome;
+    uint8_t     carga_horaria;  //usar uint8_t -> Carga horária < 255;
 };
 
-// NODE FUNCTIONS
 // Cria nova unidade curricular
-uc_t* uc_new(uint8_t semestre, uint8_t* codigo, uint8_t* nome, uint16_t carga_horaria)
+node_t* uc_node_new(uint8_t semestre, uint8_t* codigo, uint8_t* nome, uint16_t carga_horaria)
 {
+    node_t* uc_node;
     uc_t* uc = malloc(sizeof(uc_t));
 
     if (uc == NULL){
@@ -32,97 +30,82 @@ uc_t* uc_new(uint8_t semestre, uint8_t* codigo, uint8_t* nome, uint16_t carga_ho
     strcpy((char*)uc->codigo, (char*)codigo);
     strncpy((char*)uc->nome, (char*)nome,strlen((char*)nome)+1);
     uc->carga_horaria = carga_horaria;
-    uc->previous = NULL;
-    uc->next = NULL;
 
-    return uc;
+    uc_node = node_new(uc);
+
+    return uc_node;
 }
 
 // Deleta unidade curricular
-void uc_delete(uc_t* uc)
+void uc_node_delete(node_t* uc_node)
 {
+    uc_t* uc = node_get_data(uc_node);
+
+    if(uc == NULL){
+        perror("ERROR: at uc_delete: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
     free(uc->nome);
     free(uc);
+    node_delete(uc_node);
     return;
 }
 
-// list-linker
-void uc_link(uc_t* source, uc_t* destine)
+//print
+void uc_node_print(node_t* uc_node)
 {
-    if(source == NULL || destine == NULL){
-        perror("ERROR: at uc_link: ponteiros invalidos\n");
-        exit(EXIT_FAILURE);
-    }
-    source->next = destine;
-    destine->previous = source;
-}
+    uc_t* uc = node_get_data(uc_node);
 
-// list-unlinker
-void uc_unlink(uc_t* uc)
-{
     if(uc == NULL){
-        perror("ERROR: at uc_unlink: ponteiro invalido\n");
+        perror("ERROR: at node_print: ponteiro invalido\n");
         exit(EXIT_FAILURE);
     }
-    uc->previous = NULL;
-    uc->next = NULL;
-}
-
-// get next
-uc_t* uc_get_next(uc_t* uc)
-{
-    if (uc == NULL) {
-        fprintf(stderr,"ERROR: at uc_get_next: ponteiro invalido");
-        exit(EXIT_FAILURE);
-    }
-    return uc->next;
-}
-
-// get previous
-uc_t* uc_get_previous(uc_t* uc)
-{
-    if (uc == NULL) {
-        fprintf(stderr,"ERROR: at uc_get_previous: ponteiro invalido");
-        exit(EXIT_FAILURE);
-    }
-    return uc->previous;
+    printf("- uc_node:\n - semestre: %d\n - codigo: %s\n - nome: %s\n - CH:%d\n",
+           uc_node_get_semestre(uc_node), uc_node_get_codigo(uc_node),
+           uc_node_get_nome(uc_node), uc_node_get_carga_horaria(uc_node));
+    return;
 }
 
 // GETTERS METHODS
 // get semestre
-uint8_t uc_get_semestre(uc_t* uc)
+uint8_t uc_node_get_semestre(node_t* uc_node)
 {
+    uc_t* uc = node_get_data(uc_node);
+
     if (uc == NULL) {
-        fprintf(stderr,"ERROR: at uc_get_semestre: ponteiro invalido");
+        fprintf(stderr,"ERROR: at uc_node_get_semestre: ponteiro invalido");
         exit(EXIT_FAILURE);
     }
     return uc->semestre;
 }
 
 // get codigo
-uint8_t* uc_get_codigo(uc_t* uc)
+uint8_t* uc_node_get_codigo(node_t* uc_node)
 {
+    uc_t* uc = node_get_data(uc_node);
     if (uc == NULL) {
-        fprintf(stderr,"ERROR: at uc_get_codigo: ponteiro invalido");
+        fprintf(stderr,"ERROR: at uc_node_get_codigo: ponteiro invalido");
         exit(EXIT_FAILURE);
     }
     return uc->codigo;
 }
 
 // get nome
-uint8_t* uc_get_nome(uc_t* uc){
+uint8_t* uc_node_get_nome(node_t* uc_node){
+    uc_t* uc = node_get_data(uc_node);
     if (uc == NULL) {
-        fprintf(stderr,"ERROR: at uc_get_nome: ponteiro invalido");
+        fprintf(stderr,"ERROR: at uc_node_get_nome: ponteiro invalido");
         exit(EXIT_FAILURE);
     }
     return uc->nome;
 }
 
 // get carga-horaria
-uint8_t uc_get_carga_horaria(uc_t* uc)
+uint8_t uc_node_get_carga_horaria(node_t* uc_node)
 {
+    uc_t* uc = node_get_data(uc_node);
     if (uc == NULL) {
-        fprintf(stderr,"ERROR: at uc_get_carga_horaria: ponteiro invalido");
+        fprintf(stderr,"ERROR: at uc_node_get_carga_horaria: ponteiro invalido");
         exit(EXIT_FAILURE);
     }
     return uc->carga_horaria;

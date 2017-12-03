@@ -2,22 +2,21 @@
 #define UNIDADE_CURRICULAR_H_INCLUDED
 
 #include <stdint.h>
+#include "node.h"
+
 
 typedef struct unidade_curricular uc_t;
 
-//NODE FUNCTIONS
-uc_t*       uc_new(uint8_t semestre, uint8_t* codigo, uint8_t* nome, uint16_t carga_horaria);
-void        uc_delete(uc_t* uc);
+//UC_T FUNCTIONS
+node_t*     uc_node_new(uint8_t semestre, uint8_t* codigo, uint8_t* nome, uint16_t carga_horaria);
+void        uc_node_delete(node_t* uc_node);
 
-void        uc_link(uc_t* source, uc_t* destine);
-void        uc_unlink(uc_t* uc);
-uc_t*       uc_get_next(uc_t* uc);
-uc_t*       uc_get_previous(uc_t* uc);
+void        uc_node_print(node_t* uc_node);
 
 //GETTERS METHODS
-uint8_t     uc_get_semestre(uc_t* uc);
-uint8_t*    uc_get_codigo(uc_t* uc);
-uint8_t*    uc_get_nome(uc_t* uc);
-uint8_t     uc_get_carga_horaria(uc_t* uc);
+uint8_t     uc_node_get_semestre(node_t* uc_node);
+uint8_t*    uc_node_get_codigo(node_t* uc_node);
+uint8_t*    uc_node_get_nome(node_t* uc_node);
+uint8_t     uc_node_get_carga_horaria(node_t* uc_node);
 
 #endif // UNIDADE_CURRICULAR_H_INCLUDED
