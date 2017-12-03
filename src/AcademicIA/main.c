@@ -8,23 +8,22 @@
 int main()
 {
     mc_t* mc_eng;
-    mc_eng = mc_new((uint8_t*)"Engenharia Eletronica", 221, 2013,1);
+    //mc_eng = mc_new((uint8_t*)"Engenharia Eletronica", 221, 2013,1);
 
-    node_t* uc1 = uc_node_new(1,(uint8_t*)"GMT22101",(uint8_t*)"Geometria Analitica",54);
-    node_t* uc2 = uc_node_new(1,(uint8_t*)"CAA22101",(uint8_t*)"Calcula A",108);
-    node_t* uc3 = uc_node_new(1,(uint8_t*)"CAB22102",(uint8_t*)"Calcula B",72);
+    //node_t* uc1 = uc_node_new(1,(uint8_t*)"GMT22101",(uint8_t*)"Geometria Analitica",54);
+    //node_t* uc2 = uc_node_new(1,(uint8_t*)"CAA22101",(uint8_t*)"Calcula A",108);
+    //node_t* uc3 = uc_node_new(1,(uint8_t*)"CAB22102",(uint8_t*)"Calcula B",72);
     //printf("%d,",(int)uc_node_get_carga_horaria(uc1));
-    mc_uc_new(mc_eng,uc1);
-    mc_uc_new(mc_eng,uc2);
-    mc_uc_new(mc_eng,uc3);
+    //mc_uc_new(mc_eng,uc1);
+    //mc_uc_new(mc_eng,uc2);
+    //mc_uc_new(mc_eng,uc3);
     //mc_uc_delete(mc_eng, (uint8_t*)"GMT22101");
-    mc_uc_delete(mc_eng, (uint8_t*)"CAA22101");
+    //mc_uc_delete(mc_eng, (uint8_t*)"CAA22101");
     //mc_uc_delete(mc_eng, (uint8_t*)"CAB22102");
-
-
-
-    node_t* node1 = node_new(uc1);
+    mc_eng = mc_load_mc((uint8_t*)"matriz_teste_eng.csv");
     mc_print(mc_eng);
+    mc_save_mc(mc_eng, (uint8_t*)"matriz_teste_eng.csv");
+    //node_t* node1 = node_new(uc1);
 
     //node_t* uc_ca = mc_find_uc_node(mc_eng,(uint8_t*)"CAA22101");
   //  uc_node_print(uc_ca);

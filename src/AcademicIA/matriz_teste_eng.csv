@@ -1,4 +1,5 @@
-Semestre;Codigo;Nome;CH
+Matriz Curricular:
+Curso: Engenharia Eletronica. ID: 221. Grade: 2013-1.
 1;CAA22101;Calculo A;108
 1;GMT22101;Geometria Analitica;54
 1;QMG22101;Quimica Geral;54
@@ -60,4 +61,4 @@ Semestre;Codigo;Nome;CH
 9;EMP22109;Empreend e Gerencia de Proj;36
 9;???;Disciplina Eletiva;72
 10;ETC22110;Estagio Curricular Obrigatorio;160
-10;TCC22110;TCC;140
+10;TCC22110;Trabalho de Conclusao de Curso;140

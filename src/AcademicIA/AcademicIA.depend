@@ -8,7 +8,7 @@
 	<stdint.h>
 	"matriz_curricular.h"
 
-1512328535 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\main.c
+1512344457 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\main.c
 	<stdio.h>
 	<stdlib.h>
 	"matriz_curricular.h"
@@ -16,7 +16,7 @@
 	"node.h"
 	"doubly_linked_list.h"
 
-1512326909 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.c
+1512344599 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -32,7 +32,7 @@
 	<stdint.h>
 	"node.h"
 
-1512324459 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.h
+1512339282 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.h
 	<stdint.h>
 	"unidade_curricular.h"
 	"doubly_linked_list.h"

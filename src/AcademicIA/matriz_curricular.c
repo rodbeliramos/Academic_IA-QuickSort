@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "matriz_curricular.h"
-#define DEBUG
+//#define DEBUG
 
 struct matriz_curricular {
     uint8_t*    nome_curso;
@@ -32,6 +32,7 @@ mc_t* mc_new( uint8_t* nome_curso, uint8_t id_curso, uint16_t ano_criacao, uint8
     mc->id_curso = id_curso;
     mc->ano_criacao = ano_criacao;
     mc->semestre_criacao = semestre_criacao;
+    mc->total_horas = 0;
     mc->uc_node_list = dll_new();
 
     return mc;
@@ -122,26 +123,124 @@ void mc_print(mc_t* mc){
     uint8_t j = 0;
     node_t* uc_node = dll_get_head(mc_get_list(mc));
 
-    printf("---\t Matriz Curricular de %s - %d \t---\n",(char*)mc_get_nome_curso(mc),(int)mc_get_id_curso(mc));
-    printf("Criacao: %d/%d\t\t\tTotal de horas: %d\n",(int)mc_get_ano_criacao(mc),(int)mc_get_semestre_criacao(mc),
+    fprintf(stdout,"---\t Matriz Curricular de %s - %d \t---\n",(char*)mc_get_nome_curso(mc),(int)mc_get_id_curso(mc));
+    fprintf(stdout,"Criacao: %d/%d\t\t\tTotal de horas: %d\n",(int)mc_get_ano_criacao(mc),(int)mc_get_semestre_criacao(mc),
            (int)mc_get_total_horas(mc));
-    printf("Unidades Curriculares: %d\n",(int)mc_get_uc_node_total(mc));
+    fprintf(stdout,"Unidades Curriculares: %d\n",(int)mc_get_uc_node_total(mc));
 
     for(i=0;i<dll_get_list_size(mc_get_list(mc));i++){
         if(uc_node_get_semestre(uc_node)!=j){
             j = uc_node_get_semestre(uc_node);
-            puts("\n___________________________________________________________________\n");
-            printf("- SEMESTRE %d -\n",j);
-              puts("___________________________________________________________________\n");
-              puts("Codigo\t\tNome\t\t\t\tCarga Horaria\n");
+            fprintf(stdout,"\n___________________________________________________________________\n");
+            fprintf(stdout,"- SEMESTRE %d -\n",j);
+            fprintf(stdout,"___________________________________________________________________\n");
+            fprintf(stdout,"Codigo\t\tNome\t\t\t\tCarga Horaria\n");
         }
-        printf("%s\t%s\t\t%d\n",(char*)uc_node_get_codigo(uc_node),
+        fprintf(stdout,"%s\t%s\t\t%d\n",(char*)uc_node_get_codigo(uc_node),
                                 (char*)uc_node_get_nome(uc_node),
                                 (int)uc_node_get_carga_horaria(uc_node));
         uc_node = node_get_next(uc_node);
     }
     return;
 }
+
+mc_t* mc_load_mc(uint8_t* file)
+{
+    int16_t     buffer_size = 100,
+                carga_horaria,
+                ano_criacao;
+    uint8_t     qty_uc = 0,
+                i = 0,
+                semestre,
+                uc_data_qty,
+                codigo[9],
+                buffer[buffer_size],
+                nome[50],
+                semestre_criacao,
+                id_curso,
+                nome_curso[50] ;
+
+    FILE*       fp;
+    mc_t*       new_mc;
+
+    fp = fopen((char*)file,"r");
+    if(fp == NULL){
+        perror("ERROR: at mc_load_mc: fopen");
+        exit(EXIT_FAILURE);
+    }
+
+    while(fgets((char*)buffer,(int)buffer_size,fp)!=NULL)    /* Conta o numero de temporadas*/
+        qty_uc++;
+    qty_uc-=2;  //ignora o cabecario
+    node_t* uc_node[qty_uc];
+    rewind(fp);
+
+    fgets((char*)buffer,(int)buffer_size,fp); // pula o cabecario
+    fgets((char*)buffer,(int)buffer_size,fp); // Dados da MC!
+
+    uc_data_qty = 0;
+    uc_data_qty = sscanf((char*)buffer,"Curso: %50[^.]. ID: %d. Grade: %d-%d.\n", (char*)nome_curso,
+                         (int*)&id_curso, (int*)&ano_criacao, (int*)&semestre_criacao);
+    #ifdef DEBUG
+        printf("\n%s, %d, %d, %d",(char*)nome_curso, id_curso, ano_criacao, semestre_criacao);
+    #endif
+    new_mc = mc_new(nome_curso, id_curso, ano_criacao, semestre_criacao);
+
+    if(uc_data_qty != 4){
+        perror("\nErro na acquisicao dos dados do arquivo!");
+        exit(EXIT_FAILURE);
+    }
+    node_t* uc_node_atual;
+    while(fgets((char*)buffer,(int)buffer_size,fp)!=NULL){
+        uc_data_qty = 0;
+
+        uc_data_qty = sscanf((char*)buffer,"%d;%9[^;];%50[^;];%d\n",
+                             (int*)&semestre, (char*)codigo, (char*)nome, (int*)&carga_horaria);
+        #ifdef DEBUG
+            printf("\n%d, %s, %s,%i",semestre, codigo, nome, carga_horaria);
+        #endif
+        if(uc_data_qty != 4){
+            perror("\nErro na acquisicao dos dados do arquivo!");
+            exit(EXIT_FAILURE);
+        }
+        uc_node[i] = uc_node_new(semestre, (uint8_t*)codigo, (uint8_t*)nome, carga_horaria);
+        uc_node_atual = uc_node[i];
+        mc_uc_new(new_mc, uc_node_atual);
+
+        i++;
+    }
+
+    fclose(fp);    /* Fecha arquivo*/
+    return new_mc;
+}
+
+void mc_save_mc(mc_t* mc, uint8_t* file)
+{
+    FILE*       fp;
+    node_t*     uc_node;
+    uint16_t    i;
+
+    fp = fopen((char*)file,"w");
+    if(fp == NULL){
+        perror("ERROR: at mc_save_mc: fopen");
+        exit(EXIT_FAILURE);
+    }
+   // for(i=0; i<)
+    uc_node = dll_get_head(mc_get_list(mc));
+
+    fprintf(fp,"Matriz Curricular:\n");
+    fprintf(fp,"Curso: %s. ID: %d. Grade: %d-%d.\n", mc_get_nome_curso(mc),mc_get_id_curso(mc),
+                mc_get_ano_criacao(mc),mc_get_semestre_criacao(mc));
+    for(i=0;i<dll_get_list_size(mc_get_list(mc));i++){
+        fprintf(fp,"%d;%s;%s;%d\n", (int)uc_node_get_semestre(uc_node), (char*)uc_node_get_codigo(uc_node),
+                                        (char*)uc_node_get_nome(uc_node),   (int)uc_node_get_carga_horaria(uc_node));
+        uc_node = node_get_next(uc_node);
+    }
+
+    fclose(fp);    /* Fecha arquivo*/
+    return;
+}
+
 
 // GETTERS METHODS
 
