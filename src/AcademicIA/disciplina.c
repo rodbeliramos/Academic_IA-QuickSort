@@ -4,7 +4,7 @@
 
 struct disciplina {
     node_t*     uc_node;        //ponteiro para a unidade curricular na matriz curricular
-    uint16_t    turma;          //int
+    uint32_t    turma;          //int
     float       conceito;       //float
     uint8_t     faltas;         //int
     float       frequencia;     //float
@@ -12,10 +12,10 @@ struct disciplina {
     uint8_t     situacao;       //int talvez usar enum
 };
 
-node_t* discip_node_new(mc_t* mc, uint8_t* codigo_disciplina, uint16_t turma, float conceito,
+node_t* discip_node_new(node_t* mc_node, uint8_t* codigo_disciplina, uint32_t turma, float conceito,
                           uint8_t faltas, float frequencia, uint8_t origem, uint8_t situacao)
 {
-    if (mc == NULL || codigo_disciplina == NULL){
+    if (mc_node == NULL || codigo_disciplina == NULL){
         perror("ERROR: at discip_new() - ponteiros invalidos");
         exit(EXIT_FAILURE);
     }
@@ -27,7 +27,7 @@ node_t* discip_node_new(mc_t* mc, uint8_t* codigo_disciplina, uint16_t turma, fl
         perror("ERROR: at discip_node_new() - malloc for uc");
         exit(EXIT_FAILURE);
     }
-    discip->uc_node = mc_find_uc_node(mc, codigo_disciplina);
+    discip->uc_node = mc_node_find_uc_node(mc_node, codigo_disciplina);
     discip->turma = turma;
     discip->conceito = conceito;
     discip->faltas = faltas;
@@ -48,6 +48,7 @@ void discip_node_delete(node_t* discip_node)
 
     discip_t* discip = node_get_data(discip_node);
     free(discip);
+    discip = NULL;
     node_delete(discip_node);
     return;
 }
@@ -80,7 +81,7 @@ node_t* discip_node_get_uc_node(node_t* discip_node)
     return discip->uc_node;
 }
 
-uint16_t discip_node_get_turma(node_t* discip_node)
+uint32_t discip_node_get_turma(node_t* discip_node)
 {
     if(discip_node == NULL){
         perror("ERROR: at discip_node_get_turma: ponteiro invalido\n");

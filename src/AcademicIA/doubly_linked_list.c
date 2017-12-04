@@ -24,6 +24,7 @@ dll_t* dll_new(void)
 
 void dll_delete(dll_t* dll){
     free(dll);
+    dll = NULL;
     return;
 }
 
@@ -88,7 +89,7 @@ void dll_add_tail(dll_t* dll, node_t* node)
 void* dll_remove_tail(dll_t* dll)
 {
     if(dll == NULL){
-        perror("ERROR: at dll_remove_head");
+        perror("ERROR: at dll_remove_tail");
         exit(EXIT_FAILURE);
     }
     void* data;

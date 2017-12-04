@@ -48,6 +48,7 @@ void uc_node_delete(node_t* uc_node)
     }
     free(uc->nome);
     free(uc);
+    uc = NULL;
     node_delete(uc_node);
     return;
 }

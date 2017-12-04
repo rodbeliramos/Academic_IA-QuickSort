@@ -32,6 +32,7 @@ void node_delete(node_t* node)
         exit(EXIT_FAILURE);
     }
     free(node);
+    node = NULL;
     return;
 }
 
@@ -56,6 +57,7 @@ void node_unlink(node_t* node)
     }
     node->previous = NULL;
     node->next = NULL;
+    node = NULL;
     return;
 }
 
