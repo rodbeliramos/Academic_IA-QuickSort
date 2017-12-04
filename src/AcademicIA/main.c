@@ -22,9 +22,9 @@ int main()
     //mc_uc_delete(mc_eng, (uint8_t*)"CAB22102");
     mc_eng = mc_load_mc((uint8_t*)"matriz_teste_eng.csv");
     mc_print(mc_eng);
-    mc_save_mc(mc_eng, (uint8_t*)"matriz_teste_eng.csv");
+    //mc_save_mc(mc_eng, (uint8_t*)"matriz_teste_eng.csv");
     //node_t* node1 = node_new(uc1);
-
+//mc_delete(mc_eng);
     //node_t* uc_ca = mc_find_uc_node(mc_eng,(uint8_t*)"CAA22101");
   //  uc_node_print(uc_ca);
 

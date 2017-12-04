@@ -3,23 +3,16 @@
 #include "disciplina.h"
 
 struct disciplina {
-    uc_t*       uc;             //ponteiro para a unidade curricular na matriz curricular (possibilita retornar os valores abaixo
-                                //sem ocupar mais memória.
-    //uint8_t   codigo[9];      //char[]
-    //uint16_t  semestre;       //int
-    //uint8_t*  nome;           //char[]
-    //uint16_t  carga_horaria;  //int
+    node_t*     uc_node;        //ponteiro para a unidade curricular na matriz curricular
     uint16_t    turma;          //int
     float       conceito;       //float
     uint8_t     faltas;         //int
     float       frequencia;     //float
     uint8_t     origem;         //int talvez usar enum
     uint8_t     situacao;       //int talvez usar enum
-    discip_t*   previous;
-    discip_t*   next;
 };
-/*
-discip_t* discip_new(mc_t* mc, uint8_t* codigo_disciplina, uint16_t turma, float conceito,
+
+node_t* discip_node_new(mc_t* mc, uint8_t* codigo_disciplina, uint16_t turma, float conceito,
                           uint8_t faltas, float frequencia, uint8_t origem, uint8_t situacao)
 {
     if (mc == NULL || codigo_disciplina == NULL){
@@ -27,12 +20,14 @@ discip_t* discip_new(mc_t* mc, uint8_t* codigo_disciplina, uint16_t turma, float
         exit(EXIT_FAILURE);
     }
 
+    node_t* discip_node;
+
     discip_t* discip = (discip_t*)malloc(sizeof(discip_t));
-    if(discip == NULL){
-        perror("ERROR: at discip_new");
+    if (discip == NULL){
+        perror("ERROR: at discip_node_new() - malloc for uc");
         exit(EXIT_FAILURE);
     }
-    discip->uc = mc_find_uc(mc, codigo_disciplina);
+    discip->uc_node = mc_find_uc_node(mc, codigo_disciplina);
     discip->turma = turma;
     discip->conceito = conceito;
     discip->faltas = faltas;
@@ -40,6 +35,107 @@ discip_t* discip_new(mc_t* mc, uint8_t* codigo_disciplina, uint16_t turma, float
     discip->origem = origem;
     discip->situacao = situacao;
 
-    return discip;
+    discip_node = node_new(discip);
+    return discip_node;
 }
-*/
+
+void discip_node_delete(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_delete: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
+    discip_t* discip = node_get_data(discip_node);
+    free(discip);
+    node_delete(discip_node);
+    return;
+}
+
+void discip_node_print(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_print: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("- discip_node:\n - Semestre: %d\n - Codigo: %s\n - Nome: %s\n - CH:%d\n - Turma: %d\n - Conceito: %f\n - Faltas: %d\n"
+           " - Frequecia: %f\n - Origem: %d\n - Situacao: %d\n",
+           uc_node_get_semestre(discip_node_get_uc_node(discip_node)), uc_node_get_codigo(discip_node_get_uc_node(discip_node)), uc_node_get_nome(discip_node_get_uc_node(discip_node)),
+           uc_node_get_carga_horaria(discip_node_get_uc_node(discip_node)), discip_node_get_turma(discip_node), discip_node_get_conceito(discip_node),
+           discip_node_get_faltas(discip_node), discip_node_get_frequencia(discip_node), discip_node_get_origem(discip_node),
+           discip_node_get_situacao(discip_node));
+    return;
+}
+
+
+// GETTERS METHODS
+node_t* discip_node_get_uc_node(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_get_uc_node: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+    discip_t* discip = node_get_data(discip_node);
+    return discip->uc_node;
+}
+
+uint16_t discip_node_get_turma(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_get_turma: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+    discip_t* discip = node_get_data(discip_node);
+    return discip->turma;
+}
+
+float discip_node_get_conceito(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_get_conceito: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+    discip_t* discip = node_get_data(discip_node);
+    return discip->conceito;
+}
+
+uint8_t discip_node_get_faltas(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_get_faltas: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+    discip_t* discip = node_get_data(discip_node);
+    return discip->faltas;
+}
+
+float discip_node_get_frequencia(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_get_frequencia: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+    discip_t* discip = node_get_data(discip_node);
+    return discip->frequencia;
+}
+
+uint8_t discip_node_get_origem(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_get_origem: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+    discip_t* discip = node_get_data(discip_node);
+    return discip->origem;
+}
+
+uint8_t discip_node_get_situacao(node_t* discip_node)
+{
+    if(discip_node == NULL){
+        perror("ERROR: at discip_node_get_origem: ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+    discip_t* discip = node_get_data(discip_node);
+    return discip->situacao;
+}

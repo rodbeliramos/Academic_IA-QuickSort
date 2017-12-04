@@ -14,15 +14,16 @@ struct unidade_curricular {
 node_t* uc_node_new(uint8_t semestre, uint8_t* codigo, uint8_t* nome, uint16_t carga_horaria)
 {
     node_t* uc_node;
-    uc_t* uc = malloc(sizeof(uc_t));
 
+    uc_t* uc = malloc(sizeof(uc_t));
     if (uc == NULL){
-        perror("ERROR: at uc_new() - malloc for uc");
+        perror("ERROR: at uc_node_new() - malloc for uc");
         exit(EXIT_FAILURE);
     }
+
     uc->nome = (uint8_t*)malloc(strlen((char*)nome)+1);
     if(uc->nome == NULL){
-        perror("ERROR: at uc_new() - malloc for name");
+        perror("ERROR: at uc_node_new() - malloc for name");
         exit(EXIT_FAILURE);
     }
 

@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1512315647 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\disciplina.c
+1512352120 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\disciplina.c
 	<stdio.h>
 	<stdlib.h>
 	"disciplina.h"
 
-1512312443 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\disciplina.h
+1512353655 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\disciplina.h
 	<stdint.h>
 	"matriz_curricular.h"
+	"node.h"
 
-1512344457 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\main.c
+1512357114 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\main.c
 	<stdio.h>
 	<stdlib.h>
 	"matriz_curricular.h"
@@ -16,13 +17,13 @@
 	"node.h"
 	"doubly_linked_list.h"
 
-1512344599 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.c
+1512358069 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"matriz_curricular.h"
 
-1512323988 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\unidade_curricular.c
+1512348102 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\unidade_curricular.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -32,7 +33,7 @@
 	<stdint.h>
 	"node.h"
 
-1512339282 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.h
+1512356002 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\matriz_curricular.h
 	<stdint.h>
 	"unidade_curricular.h"
 	"doubly_linked_list.h"
@@ -52,4 +53,14 @@
 1512325858 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\doubly_linked_list.h
 	<stdint.h>
 	"node.h"
+
+1512356166 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\aluno.c
+	<stdio.h>
+	<stdlib.h>
+	"aluno.h"
+
+1512356166 d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\aluno.h
+	<stdint.h>
+	"doubly_linked_list.h"
+	"matriz_curricular.h"
 

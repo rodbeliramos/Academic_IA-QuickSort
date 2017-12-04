@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "matriz_curricular.h"
-//#define DEBUG
+#define DEBUG
 
 struct matriz_curricular {
+    uint8_t     id_grade;
     uint8_t*    nome_curso;
-    uint8_t     id_curso;
+    uint16_t    id_curso;
     uint16_t    ano_criacao;
     uint8_t     semestre_criacao;
     uint16_t    total_horas;
@@ -14,7 +15,7 @@ struct matriz_curricular {
 };
 
 //LIST FUNCTIONS
-mc_t* mc_new( uint8_t* nome_curso, uint8_t id_curso, uint16_t ano_criacao, uint8_t semestre_criacao)
+mc_t* mc_new( uint8_t* nome_curso, uint16_t id_curso, uint8_t id_grade, uint16_t ano_criacao, uint8_t semestre_criacao)
 {
     mc_t* mc = (mc_t*)malloc(sizeof(mc_t));
     if(mc == NULL){
@@ -30,6 +31,7 @@ mc_t* mc_new( uint8_t* nome_curso, uint8_t id_curso, uint16_t ano_criacao, uint8
     strncpy((char*)mc->nome_curso, (char*)nome_curso,strlen((char*)nome_curso)+1);
 
     mc->id_curso = id_curso;
+    mc->id_grade = id_grade;
     mc->ano_criacao = ano_criacao;
     mc->semestre_criacao = semestre_criacao;
     mc->total_horas = 0;
@@ -123,8 +125,8 @@ void mc_print(mc_t* mc){
     uint8_t j = 0;
     node_t* uc_node = dll_get_head(mc_get_list(mc));
 
-    fprintf(stdout,"---\t Matriz Curricular de %s - %d \t---\n",(char*)mc_get_nome_curso(mc),(int)mc_get_id_curso(mc));
-    fprintf(stdout,"Criacao: %d/%d\t\t\tTotal de horas: %d\n",(int)mc_get_ano_criacao(mc),(int)mc_get_semestre_criacao(mc),
+    fprintf(stdout,"\n---\t Matriz Curricular de %s - %d \t---\n",(char*)mc_get_nome_curso(mc),(int)mc_get_id_curso(mc));
+    fprintf(stdout,"Grade: %d\tCriacao: %d/%d\tTotal de horas: %d\n",(int)mc_get_id_grade(mc), (int)mc_get_ano_criacao(mc),(int)mc_get_semestre_criacao(mc),
            (int)mc_get_total_horas(mc));
     fprintf(stdout,"Unidades Curriculares: %d\n",(int)mc_get_uc_node_total(mc));
 
@@ -146,19 +148,23 @@ void mc_print(mc_t* mc){
 
 mc_t* mc_load_mc(uint8_t* file)
 {
-    int16_t     buffer_size = 100,
-                carga_horaria,
-                ano_criacao;
-    uint8_t     qty_uc = 0,
-                i = 0,
-                semestre,
-                uc_data_qty,
+    int         buffer_size = 100,
+                id_curso = 0,
+                qty_uc = 0,
+                ano_criacao = 0,
+                i = 0;
+
+    char        buffer[buffer_size],
                 codigo[9],
-                buffer[buffer_size],
                 nome[50],
-                semestre_criacao,
-                id_curso,
-                nome_curso[50] ;
+                nome_curso[50];
+
+    int         semestre = 0,
+                uc_data_qty = 0,
+                carga_horaria = 0,
+                id_grade = 0,
+                semestre_criacao = 0;
+
 
     FILE*       fp;
     mc_t*       new_mc;
@@ -179,14 +185,14 @@ mc_t* mc_load_mc(uint8_t* file)
     fgets((char*)buffer,(int)buffer_size,fp); // Dados da MC!
 
     uc_data_qty = 0;
-    uc_data_qty = sscanf((char*)buffer,"Curso: %50[^.]. ID: %d. Grade: %d-%d.\n", (char*)nome_curso,
-                         (int*)&id_curso, (int*)&ano_criacao, (int*)&semestre_criacao);
+    uc_data_qty = sscanf((char*)buffer,"Curso: %50[^.]. ID: %d. Grade: %d-%d. ID: %d.\n",
+                          nome_curso, &id_curso, &ano_criacao, &semestre_criacao, &id_grade); //Erro Aqui! ??? Don't know why!
     #ifdef DEBUG
-        printf("\n%s, %d, %d, %d",(char*)nome_curso, id_curso, ano_criacao, semestre_criacao);
+        printf("\n%s, %d, %d, %d, %d",(char*)nome_curso, id_curso, ano_criacao, semestre_criacao, id_grade);
     #endif
-    new_mc = mc_new(nome_curso, id_curso, ano_criacao, semestre_criacao);
+    new_mc = mc_new((uint8_t*)nome_curso, (uint16_t)id_curso, (uint8_t)id_grade, (uint16_t)ano_criacao, (uint8_t)semestre_criacao);
 
-    if(uc_data_qty != 4){
+    if(uc_data_qty != 5){
         perror("\nErro na acquisicao dos dados do arquivo!");
         exit(EXIT_FAILURE);
     }
@@ -229,8 +235,8 @@ void mc_save_mc(mc_t* mc, uint8_t* file)
     uc_node = dll_get_head(mc_get_list(mc));
 
     fprintf(fp,"Matriz Curricular:\n");
-    fprintf(fp,"Curso: %s. ID: %d. Grade: %d-%d.\n", mc_get_nome_curso(mc),mc_get_id_curso(mc),
-                mc_get_ano_criacao(mc),mc_get_semestre_criacao(mc));
+    fprintf(fp,"Curso: %s. ID: %d. Grade: %d-%d. ID: %d.\n", mc_get_nome_curso(mc),mc_get_id_curso(mc),
+                mc_get_ano_criacao(mc),mc_get_semestre_criacao(mc), mc_get_id_grade(mc));
     for(i=0;i<dll_get_list_size(mc_get_list(mc));i++){
         fprintf(fp,"%d;%s;%s;%d\n", (int)uc_node_get_semestre(uc_node), (char*)uc_node_get_codigo(uc_node),
                                         (char*)uc_node_get_nome(uc_node),   (int)uc_node_get_carga_horaria(uc_node));
@@ -243,6 +249,14 @@ void mc_save_mc(mc_t* mc, uint8_t* file)
 
 
 // GETTERS METHODS
+uint8_t mc_get_id_grade(mc_t* mc)
+{
+    if(mc == NULL){
+        perror("ERROR at mc_get_id_grade");
+        exit(EXIT_FAILURE);
+    }
+    return mc->id_grade;
+}
 
 uint8_t* mc_get_nome_curso(mc_t* mc)
 {
@@ -253,7 +267,7 @@ uint8_t* mc_get_nome_curso(mc_t* mc)
     return mc->nome_curso;
 }
 
-uint8_t mc_get_id_curso(mc_t* mc)
+uint16_t mc_get_id_curso(mc_t* mc)
 {
     if(mc == NULL){
         perror("ERROR at mc_get_id_curso");
