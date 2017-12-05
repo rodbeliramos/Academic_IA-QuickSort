@@ -25,9 +25,9 @@ node_t*     aluno_find_mc_node(dll_t* lista_de_mc, uint16_t id_curso, uint8_t id
 void        aluno_print(aluno_t* aluno);
 /**
 //file functions
-aluno_t*    aluno_load_aluno_pdf(uint8_t* file);
-aluno_t*    aluno_load_aluno(uint8_t* file);
-void        aluno_save_aluno(aluno_t* aluno, uint8_t* file);
+aluno_t*    aluno_load_from_txt(uint8_t* file);
+aluno_t*    aluno_load_from_csv(uint8_t* file);
+void        aluno_save_to_csv(aluno_t* aluno, uint8_t* file);
 **/
 // GETTERS METHODS
 uint16_t    aluno_get_id_curso(aluno_t* aluno);
@@ -38,7 +38,6 @@ uint16_t    aluno_get_ano_entrada(aluno_t* aluno);
 uint8_t     aluno_get_semestre_entrada(aluno_t* aluno);
 uint8_t     aluno_get_situacao(aluno_t* aluno);
 uint16_t    aluno_get_horas_cursadas(aluno_t* aluno);
-float       aluno_get_pontuacao(aluno_t* aluno);
 float       aluno_get_ia(aluno_t* aluno);
 node_t*     aluno_get_mc_do_curso(aluno_t* aluno);
 dll_t*      aluno_get_discip_node_list(aluno_t* aluno);

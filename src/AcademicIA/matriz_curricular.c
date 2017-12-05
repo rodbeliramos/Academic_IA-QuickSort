@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "matriz_curricular.h"
-#define DEBUG
+//#define DEBUG
 
 struct matriz_curricular {
     uint16_t    id_curso;
@@ -140,45 +140,49 @@ void mc_node_print(node_t* mc_node){
     uint8_t j = 0;
     node_t* uc_node = dll_get_head(mc_node_get_list(mc_node));
 
-    fprintf(stdout,"\n---\t Matriz Curricular de %s - %d \t---\n",  (char*)mc_node_get_nome_curso(mc_node),
+    fprintf(stdout,"\n-----------     Matriz Curricular de %s - %d     -----------\n\n",
+                                                                    (char*)mc_node_get_nome_curso(mc_node),
                                                                     (int)mc_node_get_id_curso(mc_node));
-    fprintf(stdout,"Grade: %d\tCriacao: %d/%d\tTotal de horas: %d\n",(int)mc_node_get_id_grade(mc_node),
+
+    fprintf(stdout,"Grade:\t\t%d\nCriacao:\t%d/%d\nTotal de horas:\t%d\n\n",(int)mc_node_get_id_grade(mc_node),
                                                                      (int)mc_node_get_ano_criacao(mc_node),
                                                                      (int)mc_node_get_semestre_criacao(mc_node),
                                                                      (int)mc_node_get_total_horas(mc_node));
-    fprintf(stdout,"Unidades Curriculares: %d\n",(int)mc_node_get_uc_node_total(mc_node));
+    fprintf(stdout,"Unidades Curriculares:\t%d\n",(int)mc_node_get_uc_node_total(mc_node));
 
     for(i=0;i<mc_node_get_uc_node_total(mc_node);i++){
         if(uc_node_get_semestre(uc_node)!=j){
             j = uc_node_get_semestre(uc_node);
-            fprintf(stdout,"\n___________________________________________________________________\n");
+            fprintf(stdout,"\n_______________________________________________________________________________\n");
             fprintf(stdout,"- SEMESTRE %d -\n",j);
-            fprintf(stdout,"___________________________________________________________________\n");
-            fprintf(stdout,"Codigo\t\tNome\t\t\t\tCarga Horaria\n");
+            fprintf(stdout,"_______________________________________________________________________________\n");
+            fprintf(stdout," Codigo\t\tNome\t\t\t\t\tCarga Horaria\n");
         }
-        fprintf(stdout,"%s\t%s\t\t%d\n",(char*)uc_node_get_codigo(uc_node),
+        fprintf(stdout," %8s\t%-25s\t\t\t%3d\n",(char*)uc_node_get_codigo(uc_node),
                                         (char*)uc_node_get_nome(uc_node),
                                         (int)uc_node_get_carga_horaria(uc_node));
         uc_node = node_get_next(uc_node);
     }
+    fprintf(stdout,"\n-------------------------------------------------------------------------------\n");
+
     return;
 }
 
 node_t* mc_node_load_mc(uint8_t* file)
 {
     //Não consegui usar o uint... a funcao sscanf se perde.
-    int         buffer_size = 100,
+    uint32_t         buffer_size = 100,
                 id_curso = 0,
                 qty_uc = 0,
                 ano_criacao = 0,
                 i = 0;
 
-    char        buffer[buffer_size],
+    uint8_t        buffer[buffer_size],
                 codigo[9],
                 nome[50],
                 nome_curso[50];
 
-    int         semestre = 0,
+    uint32_t     semestre = 0,
                 uc_data_qty = 0,
                 carga_horaria = 0,
                 id_grade = 0,

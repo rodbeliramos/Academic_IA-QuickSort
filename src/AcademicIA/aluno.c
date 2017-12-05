@@ -11,7 +11,6 @@ struct aluno {
     uint8_t     semestre_entrada;
     uint8_t     situacao;
     uint16_t    horas_cursadas;
-    float       pontuacao;
     float       ia;
     node_t*     mc_do_curso;
     dll_t*      discip_node_list;
@@ -41,7 +40,6 @@ aluno_t* aluno_new( uint8_t* nome, uint32_t matricula, uint16_t id_curso, uint8_
     aluno->semestre_entrada = semestre_entrada;
     aluno->situacao = situacao;
     aluno->horas_cursadas = 0;
-    aluno->pontuacao = 0;
     aluno->ia = 0;
     aluno->mc_do_curso = aluno_find_mc_node(lista_de_mc, id_curso, id_grade);
     aluno->discip_node_list = dll_new();
@@ -77,16 +75,18 @@ void aluno_discip_new(aluno_t* aluno, uint8_t* codigo_diciplina, uint32_t turma,
         perror("Error at aluno_discip_new - aluno or codigo_diciplina is null");
         exit(EXIT_FAILURE);
     }
-
+    float pontuacao;
     node_t* discip_node = discip_node_new(aluno_get_mc_do_curso(aluno), codigo_diciplina, turma,
                                      conceito, faltas, frequencia, origem, situacao);
 
     dll_add_tail(aluno_get_discip_node_list(aluno), discip_node);
     node_t* uc_node = discip_node_get_uc_node(discip_node);
 
+    pontuacao = aluno_get_ia(aluno) * (float)aluno_get_horas_cursadas(aluno)
+                + (float)uc_node_get_carga_horaria(uc_node) * conceito;
+
     aluno->horas_cursadas += uc_node_get_carga_horaria(uc_node);
-    aluno->pontuacao += uc_node_get_carga_horaria(uc_node) * conceito;
-    aluno->ia = aluno_get_pontuacao(aluno)/aluno_get_horas_cursadas(aluno);
+    aluno->ia = pontuacao/aluno_get_horas_cursadas(aluno);
 
     return;
 }
@@ -125,7 +125,6 @@ void aluno_print(aluno_t* aluno)
     }
     uint16_t i = 0;
     uint8_t j = 0;
-    float porcentagem = (float)aluno_get_horas_cursadas(aluno)/(float)mc_node_get_total_horas(aluno_get_mc_do_curso(aluno))*(float)100;
 
     node_t* discip_node = dll_get_head(aluno_get_discip_node_list(aluno));
     node_t* uc_node = discip_node_get_uc_node(discip_node);
@@ -138,13 +137,12 @@ void aluno_print(aluno_t* aluno)
                                                             (int)mc_node_get_ano_criacao(aluno_get_mc_do_curso(aluno)),
                                                             (int)mc_node_get_semestre_criacao(aluno_get_mc_do_curso(aluno)));
     fprintf(stdout,"Aluno(a):\t%d - %s\n\n",(int)aluno_get_matricula(aluno),(char*)aluno_get_nome(aluno));
-    fprintf(stdout,"Perido:\t%d/%d\t\t\tSituacao do Aluno no Periodo:\t%d\n",(int)aluno_get_ano_entrada(aluno),
+    fprintf(stdout,"Perido:\t%d/%d\t\t\t\tSituacao do Aluno no Periodo:\t%d\n",(int)aluno_get_ano_entrada(aluno),
                                                                            (int)aluno_get_semestre_entrada(aluno),
                                                                            (int)aluno_get_situacao(aluno));
-    fprintf(stdout,"Indice Academico:\t%2.1f\tHoras Cursadas:\t%d\tCursado:\t%2.f%%\n", (float)aluno_get_ia(aluno),
-                                                                                      (int)aluno_get_horas_cursadas(aluno),
-                                                                                      (float)porcentagem);
-    fprintf(stdout,"Unidades Curriculares: %d\n",(int)mc_node_get_uc_node_total(aluno_get_mc_do_curso(aluno)));
+    fprintf(stdout,"Indice Academico:\t%2.1f\t\tHoras Cursadas:\t%d\n", (float)aluno_get_ia(aluno),
+                                                                                      (int)aluno_get_horas_cursadas(aluno));
+    fprintf(stdout,"Unidades Curriculares:\t%d\n",(int)mc_node_get_uc_node_total(aluno_get_mc_do_curso(aluno)));
 
     for(i=0;i<aluno_get_discip_node_total(aluno);i++){
         if(uc_node_get_semestre(uc_node)!=j){
@@ -152,15 +150,15 @@ void aluno_print(aluno_t* aluno)
             fprintf(stdout,"\n_______________________________________________________________________________\n");
             fprintf(stdout,"- SEMESTRE %d -\n",j);
             fprintf(stdout,"_______________________________________________________________________________\n");
-            fprintf(stdout," CH Codigo   Nome\t\t\tTurma\tNota  Faltas Freq. Orig. Sit.\n");
+            fprintf(stdout," CH Codigo   Nome\t\t\tTurma\tNota  Faltas  Freq.  Orig. Sit.\n");
         }
-        fprintf(stdout,"%3d %s %-25s\t%d\t%4.1f\t%d     %3d    %d    %d\n",(int)uc_node_get_carga_horaria(uc_node),
+        fprintf(stdout,"%3d %s %-25s\t%d\t%4.1f\t%3d   %5.1f%%   %2d   %2d\n",(int)uc_node_get_carga_horaria(uc_node),
                                                               (char*)uc_node_get_codigo(uc_node),
                                                               (char*)uc_node_get_nome(uc_node),
                                                               (int)discip_node_get_turma(discip_node),
                                                               (float)discip_node_get_conceito(discip_node),
                                                               (int)discip_node_get_faltas(discip_node),
-                                                              (int)discip_node_get_frequencia(discip_node),
+                                                              (float)discip_node_get_frequencia(discip_node),
                                                               (int)discip_node_get_origem(discip_node),
                                                               (int)discip_node_get_situacao(discip_node) );
         if((discip_node = node_get_next(discip_node)))
@@ -255,15 +253,6 @@ uint16_t aluno_get_horas_cursadas(aluno_t* aluno)
         exit(EXIT_FAILURE);
     }
     return aluno->horas_cursadas;
-}
-
-float aluno_get_pontuacao(aluno_t* aluno)
-{
-    if(aluno == NULL){
-        perror("ERROR at aluno_get_pontuacao");
-        exit(EXIT_FAILURE);
-    }
-    return aluno->pontuacao;
 }
 
 float aluno_get_ia(aluno_t* aluno)
