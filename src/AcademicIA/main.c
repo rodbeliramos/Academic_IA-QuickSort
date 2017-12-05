@@ -47,7 +47,14 @@ int main()
     aluno_discip_new(aluno1, (uint8_t*)"PRG22104", 221042, 7.0, 7,  88.3, 1, 1);
     aluno_discip_new(aluno1, (uint8_t*)"ARQ22104", 221041, 9.0, 6,  85.0, 1, 1);
 
+
+
     aluno_print(aluno1);
+
+    aluno_delete(aluno1);           //deleta aluno e cada disciplina cursada do aluno.
+    mc_node_delete(mc_eng);         //deleta matriz curricular e cada unidade curricular dentro dela.
+    mc_node_delete(mc_sis_elet);    //deleta matriz curricular e cada unidade curricular dentro dela.
+    dll_delete(lista_de_mc);        //deleta lista de matrizes curriculares.
 
     //mc_eng = mc_new((uint8_t*)"Engenharia Eletronica", 221, 2013,1);
 
