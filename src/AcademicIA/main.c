@@ -7,12 +7,15 @@
 #include "aluno.h"
 int main()
 {
+    int menu = 0;
     dll_t* lista_de_mc;
     lista_de_mc = dll_new();
 
     node_t* mc_eng;
     mc_eng = mc_node_load_mc((uint8_t*)"matriz_teste_eng.csv");
+    /**
     mc_node_print(mc_eng);
+    **/
 
     node_t* mc_sis_elet;
     mc_sis_elet = mc_node_new((uint8_t*)"Sistemas Eletronicos", 203, 2, 2001, 2);
@@ -25,7 +28,10 @@ int main()
     mc_node_uc_new(mc_sis_elet, uc2);
     mc_node_uc_new(mc_sis_elet, uc3);
     //mc_node_uc_delete(mc_sis_elet, "CAA22101");
+
+    /**
     mc_node_print(mc_sis_elet);
+    **/
 
     dll_add_tail(lista_de_mc,mc_eng);
     dll_add_tail(lista_de_mc,mc_sis_elet);
@@ -48,8 +54,9 @@ int main()
     aluno_discip_new(aluno1, (uint8_t*)"ARQ22104", 221041, 9.0, 6,  85.0, 1, 1);
 
 
-
+    /**
     aluno_print(aluno1);
+    **/
 
     aluno_delete(aluno1);           //deleta aluno e cada disciplina cursada do aluno.
     mc_node_delete(mc_eng);         //deleta matriz curricular e cada unidade curricular dentro dela.
@@ -91,7 +98,7 @@ int main()
     mc_add_uc_tail(mc_eng, uc3);
     mc_add_uc_tail(mc_eng, uc4);
     mc_add_uc_tail(mc_eng, uc5);
-    mc_add_uc_tail(mc_eng, uc6);
+    mc_add_uc_tail(mc_eng, uc6);\n
     mc_add_uc_tail(mc_eng, uc7);
     mc_add_uc_tail(mc_eng, uc8);
     mc_add_uc_tail(mc_eng, uc9);
@@ -101,9 +108,64 @@ int main()
 
     mc_print(mc_eng);*/
 
-    //teste txt
+    printf("Bem Vindo ao programa de Calculo de Indice Academico.\n\n ");
+
+    while(1)
+    {
+        printf("Selecione a Opcao desejada:\n1 - Buscar Aluno\n2 - Buscar Disciplina\n3 - Buscar Matriz Curricular\n");
+        printf("4 - Adicionar Aluno via .txt\n5 - Ordenar alunos por IA\n6 - Salvar\n7 - Exit\n\nInput:");
+
+        scanf("%d",menu);
+
+        switch(menu)
+        {
+            case 1:
+            printf("\nDigite o nome do aluno a ser buscado: );
+            //fazer busca por nome e dar print aluno
+            break;
+
+            case 2:
+            printf("\nDigite o nome da disciplina a ser buscada: );
+
+            break;
+
+            case 3:
+            //dll_t* lista_de_mc;
+            //lista_de_mc = dll_new();
+            //node_t* mc_eng;
+            //mc_eng = mc_node_load_mc((uint8_t*)"matriz_teste_eng.csv");
+            mc_node_print(mc_eng);
+            break;
+
+            case 4:
+            aluno_t* aluno2;
+            aluno2 = aluno_load_aluno();
+
+            break;
+
+            case 5:
+
+            break;
+
+            case 6:
+
+            break;
+
+            case 7:
+
+            break;
+
+        }
+
+
+        break;
+    }
+
+    /**
     aluno_t* aluno2;
     aluno2 = aluno_load_aluno();
     aluno_print(aluno2);
+    **/
+
     return 0;
 }

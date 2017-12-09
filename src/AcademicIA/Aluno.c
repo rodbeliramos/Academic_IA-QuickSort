@@ -198,11 +198,11 @@ aluno_t* aluno_load_aluno(void)
     uint8_t id_grade = NULL;
     uint16_t ano_entrada = NULL;
     char c_ano_entrada[5];
-    char c_entrada[10];
+    char c_entrada[7];
     uint8_t semestre_entrada = NULL;
     char c_periodo[100];
     uint8_t situacao = NULL;
-    char c_situacao[10];
+    char c_situacao[6];
     int line_index = 1;
     char buffer[100];
     dll_t* lista_de_mc;
@@ -218,20 +218,25 @@ aluno_t* aluno_load_aluno(void)
     float disp_frequencia;
     char c_disp_frequencia[2];
     int disp_origem;
-    char c_origem[5];
+    char c_origem[7];
     int disp_situacao;
+    char c_disp_situacao[5];
 
     node_t* mc_eng;
     mc_eng = mc_node_load_mc((uint8_t*)"matriz_teste_eng.csv");
     dll_add_tail(lista_de_mc,mc_eng);
 
     dll_t* lista_de_uc = mc_node_get_uc_node_list(mc_eng);
-    node_t* searching_node = dll_get_head(lista_de_uc);
+    //node_t* searching_node = dll_get_head(lista_de_uc);
 
     char* uc_codigo;
     char codigobuffer[9];
 
-    char arquivo[20]= "boletim_teste.txt";
+    char arquivo[20];
+    printf("Digite o nome do arquivo aluno: ");
+    scanf("%s", arquivo);
+    fflush(stdin);
+
     //char nome_arquivo = 'boletim_test.txt';
 
 
@@ -257,7 +262,9 @@ aluno_t* aluno_load_aluno(void)
         {
             fgets(buffer,100,fp);
             fgets(buffer,100,fp);
-            strncpy(c_entrada, buffer, 10);
+            strncpy(c_entrada, buffer, 7);
+            c_entrada[6] = '\0';
+
             line_index = line_index +2;
         }
         if (line_index == 8)
@@ -280,30 +287,41 @@ aluno_t* aluno_load_aluno(void)
         if (line_index == 18)
         {
             strncpy(c_periodo, buffer, 100);
+            fgets(buffer,100,fp);
+            fgets(buffer,100,fp);
+            strncpy(c_entrada, buffer, 7);
+            c_entrada[6] = '\0';
+
+            line_index = line_index +2;
         }
         if (line_index == 24)
         {
-            memcpy(c_situacao, &buffer[0], 5);
-            situacao = strcmp(buffer,"Ativa");
-            if (situacao>1)
-                situacao = 0;
+            strncpy(c_situacao, buffer, 6);
+            c_situacao[5] = '\0';
+            situacao = !strcmp(c_situacao,"Ativa");
 
+            //printf("em line 24 c_entrada = %s", c_entrada);
 
-            strncpy(c_ano_entrada, c_entrada, 4);
+            strncpy(c_ano_entrada, c_entrada, 5);
+            c_ano_entrada[4] = '\0';
+
             ano_entrada = atoi(c_ano_entrada);
             semestre_entrada = atoi(&c_entrada[5]);
 
             novo_aluno = aluno_new(nome, matricula, id_curso, id_grade, ano_entrada, semestre_entrada, situacao, lista_de_mc);
         }
 
+        node_t* searching_node = dll_get_head(lista_de_uc);
 
-        for(i = 0; i<mc_node_get_uc_node_total(mc_eng); i++)
+        for(i = 0; i<(mc_node_get_uc_node_total(mc_eng))-1; i++)
         {
+
             uc_codigo = (char*)uc_node_get_codigo(searching_node);
+
 
             strncpy(codigobuffer, buffer,9);
             codigobuffer[8] = '\0';
-            printf("codigobuffer: %s\n", codigobuffer);
+          //  printf("codigobuffer: %s\n", codigobuffer);
 
 
 
@@ -346,36 +364,43 @@ aluno_t* aluno_load_aluno(void)
                 fgets(buffer,100,fp);
                 fgets(buffer,100,fp);
 
-                memcpy(c_origem, &buffer[0], 5);
-                disp_origem = strcmp(buffer,"Normal");
-                if (disp_origem!= 1)
-                    disp_origem = 0;
+                strncpy(c_origem, buffer,7);
+                c_origem[6] = '\0';
+                disp_origem = !strcmp(c_origem,"Normal");
+               // if (disp_origem!= 1)
+                   // disp_origem = 0;
 
                 fgets(buffer,100,fp);
                 fgets(buffer,100,fp);
 
-                memcpy(c_situacao, &buffer[0], 4);
-                disp_situacao = strcmp(buffer,"Apto");
-                if (disp_origem!= 1)
-                    disp_situacao = 0;
+                strncpy(c_disp_situacao, buffer,5);
+                c_disp_situacao[4] = '\0';
+                disp_situacao = !strcmp(c_disp_situacao,"Apto");
 
-                printf("ENTROUUUU");
+                //printf("ENTROUUUU");
 
                 aluno_discip_new(novo_aluno, (uint8_t*)uc_codigo, (uint16_t)disp_turma, (float)disp_conceito, (uint8_t)disp_falta, (float)disp_frequencia, (uint8_t)disp_origem, (uint8_t)disp_situacao);
             }
 
 
-
+        searching_node = node_get_next(searching_node);
         }
 
         //printf ("%s \n fim do get \n ",buffer);
         line_index++;
 
     }
+    strncpy(c_ano_entrada, c_entrada, 5);
+    c_ano_entrada[4] = '\0';
+
+    ano_entrada = atoi(c_ano_entrada);
+    semestre_entrada = atoi(&c_entrada[5]);
+
+    novo_aluno->ano_entrada = ano_entrada;
+    novo_aluno->semestre_entrada = semestre_entrada;
 
 
-
-
+    /*
     printf("line index: %i\n",line_index);
     printf("Id do curso: %i\n", id_curso);
     printf("matricula: %i\n", matricula);
@@ -385,6 +410,8 @@ aluno_t* aluno_load_aluno(void)
     printf("Entrada: %s\n", c_entrada);
     printf("Ano entrada: %i\n", ano_entrada);
     printf("Semestre entrada: %i\n", semestre_entrada);
+    */
+
     fclose(fp);
 
 

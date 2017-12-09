@@ -1,0 +1,277 @@
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1710067462 - RODRIGO BELISARIO RAMOS
+
+Período:
+
+2017/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 1
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+COM22101
+
+Comunicação e Expressão
+
+221019
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+EGS22101
+
+Engenharia e Sustentabilidade
+
+221012
+
+9.0
+
+8
+
+76.5%
+
+Normal
+
+Apto
+
+GMT22101
+
+Geometria Analítica
+
+221012
+
+6.0
+
+6
+
+90%
+
+Normal
+
+Apto
+
+PIN22101
+
+Projeto Integrador I
+
+221012
+
+10.0
+
+6
+
+85%
+
+Normal
+
+Apto
+
+ELD22101
+
+Eletrônica Digital I
+
+221019
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+QMG22101
+
+Química Geral
+
+221012
+
+6.0
+
+1
+
+98.3%
+
+Normal
+
+Apto
+
+CAL22101
+
+Cálculo A
+
+221012
+
+0.0
+
+34
+
+71.7%
+
+Normal
+
+Não Apto
+
+SEMESTRE 2
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ELD22102
+
+Eletrônica Digital II
+
+221029
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+SEMESTRE 3
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+MEP22103
+
+Metodologia de Pesquisa
+
+221039
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+PRG22104
+
+Programação de Computadores I
+
+221042
+
+7.0
+
+7
+
+88.3%
+
+Normal
+
+Apto
+
+ARQ22104
+
+Arquitetura de Computadores
+
+221041
+
+9.0
+
+6
+
+85%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 24 de Novembro de 2017
+Este documento foi gerado às 10:29:35
+
+
