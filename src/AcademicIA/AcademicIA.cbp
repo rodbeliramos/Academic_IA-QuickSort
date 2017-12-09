@@ -31,9 +31,34 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="aluno.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="aluno.h" />
+		<Unit filename="disciplina.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="disciplina.h" />
+		<Unit filename="doubly_linked_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="doubly_linked_list.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="matriz_curricular.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="matriz_curricular.h" />
+		<Unit filename="matriz_curricular_eng_eletronica.csv" />
+		<Unit filename="node.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="node.h" />
+		<Unit filename="unidade_curricular.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unidade_curricular.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
