@@ -1,6 +1,6 @@
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "unidade_curricular.h"
 
 struct unidade_curricular {

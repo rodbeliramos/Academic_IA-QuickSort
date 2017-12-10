@@ -1,0 +1,518 @@
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1610118243 - SUZI YOUSIF
+
+Período:
+
+2017/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 3
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+MCS22103
+
+Mecânica dos Sólidos
+
+221031
+
+10.0
+
+2
+
+95%
+
+Normal
+
+Apto
+
+MEP22103
+
+Metodologia de Pesquisa
+
+221031
+
+10.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+CEL22103
+
+Circuitos Elétricos II
+
+221032
+
+7.0
+
+2
+
+96.7%
+
+Normal
+
+Apto
+
+SEG22103
+
+Aspectos de Segurança em Eletricidade
+
+221031
+
+7.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+FFE22103
+
+Fundamentos de Física em Eletricidade
+
+221031
+
+7.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+ETP22103
+
+Estatística e Probabilidade
+
+221031
+
+10.0
+
+4
+
+93.8%
+
+Normal
+
+Apto
+
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CAL22104
+
+Equações diferenciais
+
+221041
+
+10.0
+
+6
+
+92.5%
+
+Normal
+
+Apto
+
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CTM22105
+
+Ciência e Tecnologia dos Materiais
+
+221051
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 01 de Dezembro de 2017
+Este documento foi gerado às 18:16:41
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1610118243 - SUZI YOUSIF
+
+Período:
+
+2016/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 2
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ELD22102
+
+Eletrônica Digital II
+
+221022
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+DST22102
+
+Desenho Técnico
+
+221022
+
+10.0
+
+2
+
+95%
+
+Normal
+
+Apto
+
+FFM22102
+
+Fundamentos de Física em Mecânica
+
+221021
+
+8.0
+
+4
+
+96.7%
+
+Normal
+
+Apto
+
+CAB22102
+
+Cálculo B
+
+221021
+
+10.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+ALG22102
+
+Álgebra Linear
+
+221021
+
+9.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+CEL22102
+
+Circuitos Elétricos I
+
+221022
+
+9.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 01 de Dezembro de 2017
+Este documento foi gerado às 18:16:41
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1610118243 - SUZI YOUSIF
+
+Período:
+
+2016/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 1
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+PIN22101
+
+Projeto Integrador I
+
+221011
+
+10.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+GMT22101
+
+Geometria Analítica
+
+221011
+
+9.0
+
+6
+
+90%
+
+Normal
+
+Apto
+
+ELD22101
+
+Eletrônica Digital I
+
+221011
+
+9.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+EGS22101
+
+Engenharia e Sustentabilidade
+
+221011
+
+9.0
+
+2
+
+94.1%
+
+Normal
+
+Apto
+
+COM22101
+
+Comunicação e Expressão
+
+221011
+
+9.0
+
+2
+
+95%
+
+Normal
+
+Apto
+
+CAL22101
+
+Cálculo A
+
+221011
+
+9.0
+
+6
+
+95%
+
+Normal
+
+Apto
+
+QMG22101
+
+Química Geral
+
+221011
+
+9.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 01 de Dezembro de 2017
+Este documento foi gerado às 18:16:41
+
+

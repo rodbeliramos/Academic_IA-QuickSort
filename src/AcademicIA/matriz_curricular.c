@@ -53,8 +53,8 @@ void mc_node_delete(node_t* mc_node)
     uint16_t i;
     node_t* uc_node;
     node_t* next_uc_node;
-    uc_node = dll_get_head(mc_node_get_list(mc_node));
-    for(i=0; i<dll_get_list_size(mc_node_get_list(mc_node)); i++){
+    uc_node = dll_get_head(mc_node_get_uc_node_list(mc_node));
+    for(i=0; i<dll_get_list_size(mc_node_get_uc_node_list(mc_node)); i++){
         next_uc_node = node_get_next(uc_node);
         uc_node_delete(uc_node);
         uc_node = next_uc_node;
@@ -76,7 +76,7 @@ void mc_node_uc_new(node_t* mc_node, node_t* uc_node)
     }
     mc_t* mc = node_get_data(mc_node);
 
-    dll_add_tail(mc_node_get_list(mc_node),uc_node);
+    dll_add_tail(mc_node_get_uc_node_list(mc_node),uc_node);
     mc->total_horas += uc_node_get_carga_horaria(uc_node);
     return;
 }
@@ -95,12 +95,12 @@ void mc_node_uc_delete(node_t* mc_node, uint8_t* codigo)
     node_t* uc_node;
 
     uc_node = mc_node_find_uc_node(mc_node, codigo);
-    if(uc_node == dll_get_head(mc_node_get_list(mc_node))){            //se o nó está na cabeça da lista...
-        dll_remove_head(mc_node_get_list(mc_node));
-    } else if(uc_node == dll_get_tail(mc_node_get_list(mc_node))){    //se o nó está na cauda da lista...
-        dll_remove_tail(mc_node_get_list(mc_node));
+    if(uc_node == dll_get_head(mc_node_get_uc_node_list(mc_node))){            //se o nó está na cabeça da lista...
+        dll_remove_head(mc_node_get_uc_node_list(mc_node));
+    } else if(uc_node == dll_get_tail(mc_node_get_uc_node_list(mc_node))){    //se o nó está na cauda da lista...
+        dll_remove_tail(mc_node_get_uc_node_list(mc_node));
     } else{                                                 //se o nó está no meio da lista
-        dll_remove_between(mc_node_get_list(mc_node), uc_node); //problema aqui
+        dll_remove_between(mc_node_get_uc_node_list(mc_node), uc_node); //problema aqui
     }
 
     mc->total_horas -= uc_node_get_carga_horaria(uc_node);
@@ -119,9 +119,9 @@ node_t* mc_node_find_uc_node(node_t* mc_node, uint8_t* codigo)
     }
 
     uint16_t i;
-    node_t* uc_node = dll_get_head(mc_node_get_list(mc_node));
+    node_t* uc_node = dll_get_head(mc_node_get_uc_node_list(mc_node));
 
-    for(i=0;i<dll_get_list_size(mc_node_get_list(mc_node));i++){
+    for(i=0;i<dll_get_list_size(mc_node_get_uc_node_list(mc_node));i++){
         if(strcmp((char*)uc_node_get_codigo(uc_node), (char*)codigo)==0)
         {
             return uc_node;
@@ -138,7 +138,7 @@ void mc_node_print(node_t* mc_node){
     }
     uint16_t i = 0;
     uint8_t j = 0;
-    node_t* uc_node = dll_get_head(mc_node_get_list(mc_node));
+    node_t* uc_node = dll_get_head(mc_node_get_uc_node_list(mc_node));
 
     fprintf(stdout,"\n-----------     Matriz Curricular de %s - %d     -----------\n\n",
                                                                     (char*)mc_node_get_nome_curso(mc_node),
@@ -261,7 +261,7 @@ void mc_node_save_mc(node_t* mc_node, uint8_t* file)
         exit(EXIT_FAILURE);
     }
    // for(i=0; i<)
-    uc_node = dll_get_head(mc_node_get_list(mc_node));
+    uc_node = dll_get_head(mc_node_get_uc_node_list(mc_node));
 
     fprintf(fp,"Matriz Curricular:\n");
     fprintf(fp,"Curso: %s. ID: %d. Grade: %d-%d. ID: %d.\n", mc_node_get_nome_curso(mc_node),mc_node_get_id_curso(mc_node),
@@ -338,7 +338,7 @@ uint16_t mc_node_get_total_horas(node_t* mc_node){
     return mc->total_horas;
 }
 
-dll_t* mc_node_get_list(node_t* mc_node)
+dll_t* mc_node_get_uc_node_list(node_t* mc_node)
 {
     if(mc_node == NULL){
         perror("ERROR at mc_node_get_lista");
@@ -354,5 +354,5 @@ uint16_t mc_node_get_uc_node_total(node_t* mc_node)
         perror("ERROR at mc_node_get_uc_node_total");
         exit(EXIT_FAILURE);
     }
-    return dll_get_list_size(mc_node_get_list(mc_node));
+    return dll_get_list_size(mc_node_get_uc_node_list(mc_node));
 }

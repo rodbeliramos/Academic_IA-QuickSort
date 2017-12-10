@@ -23,12 +23,13 @@ node_t*     aluno_find_mc_node(dll_t* lista_de_mc, uint16_t id_curso, uint8_t id
 
 // print functions
 void        aluno_print(aluno_t* aluno);
-/**
+
+
 //file functions
-aluno_t*    aluno_load_from_txt(uint8_t* file);
-aluno_t*    aluno_load_from_csv(uint8_t* file);
-void        aluno_save_to_csv(aluno_t* aluno, uint8_t* file);
-**/
+aluno_t*    aluno_load_from_txt(char *arquivo, FILE *fp);
+void        aluno_save_to_csv(aluno_t** vetor_alunos, uint32_t alunos_qty, uint8_t* file_name);
+aluno_t**   aluno_load_from_csv(uint32_t* alunos_qty_p, uint8_t* file_name, dll_t* lista_de_mc);
+
 // GETTERS METHODS
 uint16_t    aluno_get_id_curso(aluno_t* aluno);
 uint8_t     aluno_get_id_grade(aluno_t* aluno);

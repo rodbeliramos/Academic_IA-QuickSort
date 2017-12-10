@@ -55,6 +55,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="node.h" />
+		<Unit filename="ordenacao.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ordenacao.h" />
 		<Unit filename="unidade_curricular.c">
 			<Option compilerVar="CC" />
 		</Unit>

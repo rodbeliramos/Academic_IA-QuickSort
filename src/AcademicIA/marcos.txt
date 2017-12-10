@@ -1,0 +1,1233 @@
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2016/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 6
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+SIS22106
+
+Sinais e Sistemas
+
+221061
+
+6.0
+
+7
+
+91.3%
+
+Normal
+
+Apto
+
+ELN22106
+
+Eletrônica III
+
+221061
+
+8.0
+
+6
+
+92.5%
+
+Normal
+
+Apto
+
+INE22106
+
+Instrumentação Eletrônica
+
+221061
+
+8.0
+
+4
+
+93.8%
+
+Normal
+
+Apto
+
+CPC22106
+
+Computação Científica
+
+221061
+
+6.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+MCC22106
+
+Microcontroladores I
+
+221061
+
+10.0
+
+2
+
+97.5%
+
+Normal
+
+Apto
+
+SEMESTRE 8
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ADM22108
+
+Administração para Engenharia
+
+221081
+
+10.0
+
+4
+
+88.2%
+
+Normal
+
+Apto
+
+CTS22108
+
+Ciência, Tecnologia e Sociedade
+
+221081
+
+10.0
+
+2
+
+94.1%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2016/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+PRG22105
+
+Programação de Computadores II
+
+221051
+
+7.0
+
+8
+
+89.7%
+
+Normal
+
+Apto
+
+FMD22105
+
+Fundamentos em Física Moderna
+
+221051
+
+7.0
+
+2
+
+94.4%
+
+Normal
+
+Apto
+
+MCP22105
+
+Microprocessadores
+
+221051
+
+9.0
+
+2
+
+97.5%
+
+Normal
+
+Apto
+
+ELN22105
+
+Eletrônica II
+
+221051
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+SEMESTRE 6
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CEE22106
+
+Conversão Eletromecânica da Energia I
+
+221061
+
+9.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+SEMESTRE 7
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ECN22107
+
+Economia para Engenharia
+
+221071
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2015/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CEL22104
+
+Circuitos Elétricos III
+
+221041
+
+7.0
+
+2
+
+96.3%
+
+Normal
+
+Apto
+
+FFT22104
+
+Fund. de Física em Termodinâmica e Ondas
+
+221041
+
+9.0
+
+4
+
+96%
+
+Normal
+
+Apto
+
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+FNT22105
+
+Fenômenos de Transporte
+
+221051
+
+10.0
+
+2
+
+94.7%
+
+Normal
+
+Apto
+
+CTM22105
+
+Ciência e Tecnologia dos Materiais
+
+221051
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+EMG22105
+
+Eletromagnetismo I
+
+221051
+
+9.0
+
+8
+
+88.9%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2015/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ELN22104
+
+Eletrônica I
+
+2210411
+
+8.0
+
+4
+
+95%
+
+Normal
+
+Apto
+
+PRG22104
+
+Programação de Computadores I
+
+2210411
+
+8.0
+
+6
+
+90%
+
+Normal
+
+Apto
+
+PIN22104
+
+Projeto Integrador II
+
+2210411
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+CAL22104
+
+Equações diferenciais
+
+2210411
+
+7.0
+
+2
+
+97.5%
+
+Normal
+
+Apto
+
+ARQ22104
+
+Arquitetura de Computadores
+
+2210411
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2014/2
+
+Situação do Aluno no Período:
+
+Trancada
+
+Unidade Curriculares:
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+PRG22104
+
+Programação de Computadores I
+
+FFT22104
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+2210411
+
+0
+
+100%
+
+Normal
+
+Não Apto
+
+Fund. de Física em Termodinâmica e Ondas
+
+2210411
+
+0
+
+100%
+
+Normal
+
+Não Apto
+
+ELN22104
+
+Eletrônica I
+
+2210411
+
+0
+
+100%
+
+Normal
+
+Não Apto
+
+CAL22104
+
+Equações diferenciais
+
+2210411
+
+0
+
+100%
+
+Normal
+
+Não Apto
+
+ARQ22104
+
+Arquitetura de Computadores
+
+2210411
+
+0
+
+100%
+
+Normal
+
+Não Apto
+
+PIN22104
+
+Projeto Integrador II
+
+2210411
+
+0
+
+100%
+
+Normal
+
+Não Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2014/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 3
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CEL22103
+
+Circuitos Elétricos II
+
+2210311
+
+P
+
+5
+
+88.9%
+
+Normal
+
+Apto
+
+ETP22103
+
+Estatística e Probabilidade
+
+2210311
+
+E
+
+0
+
+100%
+
+Normal
+
+Apto
+
+SEG22103
+
+Aspectos de Segurança em Eletricidade
+
+2210311
+
+E
+
+0
+
+100%
+
+Normal
+
+Apto
+
+FFE22103
+
+Fundamentos de Física em Eletricidade
+
+2210311
+
+P
+
+10
+
+91.4%
+
+Normal
+
+Apto
+
+MCS22103
+
+Mecânica dos Sólidos
+
+2210311
+
+P
+
+2
+
+95%
+
+Normal
+
+Apto
+
+CAV22103
+
+Cálculo Vetorial
+
+2210311
+
+P
+
+2
+
+97.5%
+
+Normal
+
+Apto
+
+MEP22103
+
+Metodologia de Pesquisa
+
+2210311
+
+E
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2013/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 2
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ALG22102
+
+Álgebra Linear
+
+2210211
+
+E
+
+6
+
+90%
+
+Normal
+
+Apto
+
+CAB22102
+
+Cálculo B
+
+2210211
+
+P
+
+2
+
+97.5%
+
+Normal
+
+Apto
+
+DST22102
+
+Desenho Técnico
+
+2210231
+
+E
+
+1
+
+97.5%
+
+Normal
+
+Apto
+
+ELD22102
+
+Eletrônica Digital II
+
+2210211
+
+E
+
+6
+
+92.5%
+
+Normal
+
+Apto
+
+FFM22102
+
+Fundamentos de Física em Mecânica
+
+2210211
+
+E
+
+6
+
+94.8%
+
+Normal
+
+Apto
+
+CEL22102
+
+Circuitos Elétricos I
+
+2210211
+
+E
+
+6
+
+92.5%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310012229 - MARCOS VINICIUS LEAL DA SILVA
+
+Período:
+
+2013/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 1
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+GMT22101
+
+Geometria Analítica
+
+2210112
+
+E
+
+0
+
+100%
+
+Normal
+
+Apto
+
+ELD22101
+
+Eletrônica Digital I
+
+2210112
+
+E
+
+0
+
+100%
+
+Normal
+
+Apto
+
+EGS22101
+
+Engenharia e Sustentabilidade
+
+2210112
+
+E
+
+4
+
+90%
+
+Normal
+
+Apto
+
+COM22101
+
+Comunicação e Expressão
+
+2210112
+
+E
+
+2
+
+95%
+
+Normal
+
+Apto
+
+CAL22101
+
+Cálculo A
+
+2210112
+
+P
+
+2
+
+98.1%
+
+Normal
+
+Apto
+
+QMG22101
+
+Química Geral
+
+2210131
+
+P
+
+0
+
+100%
+
+Normal
+
+Apto
+
+PIN22101
+
+Projeto Integrador I
+
+2210112
+
+E
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 10 de Dezembro de 2017
+Este documento foi gerado às 02:03:05
+
+

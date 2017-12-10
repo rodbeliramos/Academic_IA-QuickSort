@@ -1,0 +1,162 @@
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1710041315 - RAYAN MARTINS STEINBACH
+
+Período:
+
+2017/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 1
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+PIN22101
+
+Projeto Integrador I
+
+221011
+
+9.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+CAL22101
+
+Cálculo A
+
+221012
+
+6.0
+
+4
+
+96.7%
+
+Normal
+
+Apto
+
+COM22101
+
+Comunicação e Expressão
+
+221012
+
+7.0
+
+2
+
+95.2%
+
+Normal
+
+Apto
+
+QMG22101
+
+Química Geral
+
+221012
+
+6.0
+
+3
+
+95%
+
+Normal
+
+Apto
+
+ELD22101
+
+Eletrônica Digital I
+
+221012
+
+7.0
+
+4
+
+95%
+
+Normal
+
+Apto
+
+GMT22101
+
+Geometria Analítica
+
+221012
+
+7.0
+
+4
+
+93.3%
+
+Normal
+
+Apto
+
+EGS22101
+
+Engenharia e Sustentabilidade
+
+221012
+
+8.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 09 de Dezembro de 2017
+Este documento foi gerado às 22:05:17
+
+

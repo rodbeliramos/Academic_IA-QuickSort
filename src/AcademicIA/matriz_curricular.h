@@ -31,7 +31,7 @@ uint16_t    mc_node_get_id_curso(node_t* mc_node);
 uint16_t    mc_node_get_ano_criacao(node_t* mc_node);
 uint8_t     mc_node_get_semestre_criacao(node_t* mc_node);
 uint16_t    mc_node_get_total_horas(node_t* mc_node);
-dll_t*      mc_node_get_list(node_t* mc_node);
+dll_t*      mc_node_get_uc_node_list(node_t* mc_node);
 uint16_t    mc_node_get_uc_node_total(node_t* mc_node);
 
 #endif // MATRIZ_CURRICULAR_H_INCLUDED

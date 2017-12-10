@@ -1,0 +1,662 @@
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1410036618 - RAFAEL FERNANDO REIS
+
+Período:
+
+2017/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+PRG22104
+
+Programação de Computadores I
+
+221041
+
+6.0
+
+4
+
+93.3%
+
+Normal
+
+Apto
+
+PIN22104
+
+Projeto Integrador II
+
+221041
+
+7.0
+
+4
+
+90%
+
+Normal
+
+Apto
+
+FFT22104
+
+Fund. de Física em Termodinâmica e Ondas
+
+221041
+
+6.0
+
+22
+
+79.6%
+
+Normal
+
+Apto
+
+ELN22104
+
+Eletrônica I
+
+221041
+
+6.0
+
+8
+
+90%
+
+Normal
+
+Apto
+
+CEL22104
+
+Circuitos Elétricos III
+
+221041
+
+4.0
+
+2
+
+96.7%
+
+Normal
+
+Não Apto
+
+CAL22104
+
+Equações diferenciais
+
+221041
+
+8.0
+
+4
+
+95%
+
+Normal
+
+Apto
+
+ARQ22104
+
+Arquitetura de Computadores
+
+221041
+
+9.0
+
+2
+
+95%
+
+Normal
+
+Apto
+
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CTM22105
+
+Ciência e Tecnologia dos Materiais
+
+221051
+
+7.0
+
+4
+
+88.9%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 05 de Dezembro de 2017
+Este documento foi gerado às 22:09:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1410036618 - RAFAEL FERNANDO REIS
+
+Período:
+
+2015/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 3
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CAV22103
+
+Cálculo Vetorial
+
+2210311
+
+8.0
+
+8
+
+90%
+
+Normal
+
+Apto
+
+SEG22103
+
+Aspectos de Segurança em Eletricidade
+
+2210311
+
+8.0
+
+6
+
+85.4%
+
+Normal
+
+Apto
+
+MEP22103
+
+Metodologia de Pesquisa
+
+2210311
+
+8.0
+
+2
+
+95.2%
+
+Normal
+
+Apto
+
+MCS22103
+
+Mecânica dos Sólidos
+
+2210311
+
+6.0
+
+6
+
+84.2%
+
+Normal
+
+Apto
+
+FFE22103
+
+Fundamentos de Física em Eletricidade
+
+2210311
+
+7.0
+
+12
+
+89.8%
+
+Normal
+
+Apto
+
+ETP22103
+
+Estatística e Probabilidade
+
+2210311
+
+8.0
+
+5
+
+91.8%
+
+Normal
+
+Apto
+
+CEL22103
+
+Circuitos Elétricos II
+
+2210311
+
+6.0
+
+9
+
+83.3%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 05 de Dezembro de 2017
+Este documento foi gerado às 22:09:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1410036618 - RAFAEL FERNANDO REIS
+
+Período:
+
+2014/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 2
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CEL22102
+
+Circuitos Elétricos I
+
+2210211
+
+P
+
+19
+
+75%
+
+Normal
+
+Apto
+
+DST22102
+
+Desenho Técnico
+
+2210211
+
+E
+
+0
+
+100%
+
+Normal
+
+Apto
+
+ELD22102
+
+Eletrônica Digital II
+
+2210211
+
+P
+
+4
+
+95%
+
+Normal
+
+Apto
+
+FFM22102
+
+Fundamentos de Física em Mecânica
+
+2210211
+
+P
+
+0
+
+100%
+
+Normal
+
+Apto
+
+ALG22102
+
+Álgebra Linear
+
+2210211
+
+P
+
+2
+
+96.7%
+
+Normal
+
+Apto
+
+CAB22102
+
+Cálculo B
+
+2210211
+
+S
+
+10
+
+87.5%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 05 de Dezembro de 2017
+Este documento foi gerado às 22:09:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1410036618 - RAFAEL FERNANDO REIS
+
+Período:
+
+2014/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 1
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+QMG22101
+
+Química Geral
+
+2210112
+
+E
+
+9
+
+84.2%
+
+Normal
+
+Apto
+
+CAL22101
+
+Cálculo A
+
+2210112
+
+P
+
+8
+
+93.3%
+
+Normal
+
+Apto
+
+COM22101
+
+Comunicação e Expressão
+
+2210112
+
+P
+
+6
+
+85%
+
+Normal
+
+Apto
+
+EGS22101
+
+Engenharia e Sustentabilidade
+
+2210112
+
+P
+
+4
+
+90%
+
+Normal
+
+Apto
+
+ELD22101
+
+Eletrônica Digital I
+
+2210112
+
+P
+
+2
+
+97.5%
+
+Normal
+
+Apto
+
+GMT22101
+
+Geometria Analítica
+
+2210112
+
+P
+
+5
+
+91.7%
+
+Normal
+
+Apto
+
+PIN22101
+
+Projeto Integrador I
+
+2210112
+
+E
+
+6
+
+85%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 05 de Dezembro de 2017
+Este documento foi gerado às 22:09:50
+
+
