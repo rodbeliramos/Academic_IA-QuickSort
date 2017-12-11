@@ -6,7 +6,7 @@
 #include "unidade_curricular.h"
 #include "node.h"
 #include "doubly_linked_list.h"
-
+#define DEBUG
 
 struct aluno
 {
@@ -186,29 +186,257 @@ void aluno_print(aluno_t* aluno)
     return;
 }
 
-uint32_t aluno_load_from_txt2(aluno_t** vetor_alunos, uint32_t* alunos_qty_p, uint8_t* file_name, dll_t* lista_de_mc)
+void aluno_load_from_txt2(aluno_t** vetor_alunos, uint32_t* alunos_qty_p, dll_t* lista_de_mc)
 {
-    if(file_name == NULL){
-        perror("Error at aluno_load_from_txt2: file_name == NULL\n");
-        puts("Favor inserir um nome de arquivo valido\n");
-        return *alunos_qty_p;
-    }
-    if(file_name == NULL || alunos_qty_p == NULL || lista_de_mc == NULL){
-        perror("Error at aluno_load_from_txt2: file_name == NULL\n");
+    if(vetor_alunos == NULL || alunos_qty_p == NULL || lista_de_mc == NULL)
+    {
+        perror("Error at aluno_load_from_txt2: something == NULL\n");
         puts("Favor inserir todos os dados da funcao\n");
-        return *alunos_qty_p;
+        exit(EXIT_FAILURE);
     }
 
-    FILE*       fp;
+    char file_name[20];
+    uint8_t valid_input = 0;
+    FILE* fp;
+    while(!valid_input)
+    {
+        printf("Digite o nome do arquivo aluno (max: 20 caracteres): ");
+        scanf("%s", file_name);
+        fflush(stdin);
+        fp = fopen(file_name, "r");
 
-    fp = fopen((char*)file_name,"r");
-    if(fp == NULL){
-        perror("ERROR: at aluno_load_from_txt2: fopen");
+        if(fp == NULL)
+        {
+            perror("Error at aluno_load_from_txt2: fp == NULL\n");
+            puts("Favor inserir um nome de arquivo valido\n");
+            return;
+        } else
+            valid_input = 1;
+    }
+
+    aluno_t* novo_aluno = NULL;
+    uint32_t alunos_qty = *alunos_qty_p;
+    uint8_t nome[50];
+    uint32_t matricula = NULL;
+    uint16_t id_curso = NULL;
+    char c_id_curso[10];
+    uint8_t id_grade = NULL;
+    uint16_t ano_entrada = NULL;
+    char c_ano_entrada[5];
+    char c_entrada[7];
+    uint8_t semestre_entrada = NULL;
+    char c_periodo[100];
+    uint8_t situacao = NULL;
+    char c_situacao[6];
+    int line_index = 1;
+    char buffer[100];
+
+    int i = 0;
+
+    int disp_turma;
+    char c_disp_turma[7];
+    float disp_conceito;
+    int disp_falta;
+    char c_disp_falta[3];
+    float disp_frequencia;
+    char c_disp_frequencia[2];
+    int disp_origem;
+    char c_origem[7];
+    int disp_situacao;
+    char c_disp_situacao[5];
+    char* uc_codigo;
+    char codigobuffer[9];
+
+    dll_t* lista_de_uc = NULL;
+    node_t* mc_node = dll_get_head(lista_de_mc);
+    node_t* searching_node = NULL;
+
+    while (fgets(buffer,100,fp)!= NULL)
+    {
+        if (!strcmp(c_periodo,buffer))
+        {
+            fgets(buffer,100,fp);
+            fgets(buffer,100,fp);
+            strncpy(c_entrada, buffer, 7);
+            c_entrada[6] = '\0';
+
+            line_index = line_index +2;
+        }
+        if (line_index == 8)
+        {
+            strncpy(c_id_curso, buffer, 3);
+            id_curso = atoi(c_id_curso);
+            for(i=0; i<dll_get_list_size(lista_de_mc);i++){
+                if( id_curso == mc_node_get_id_curso(mc_node)){
+                    lista_de_uc = mc_node_get_uc_node_list(mc_node);
+                    break;
+                } else {
+                    mc_node = node_get_next(mc_node);
+                }
+            }
+        }
+        if (line_index == 12)
+        {
+
+            id_grade = atoi(&buffer[0]);
+        }
+        if (line_index == 16)
+        {
+            sscanf(buffer, "%d - %50[A-Z\x20]", (int*)&matricula, (char*)nome);
+            for (i=0; i<alunos_qty; i++)
+            {
+                if (aluno_get_matricula(vetor_alunos[i]) == matricula)
+                {
+                    puts("Aluno já adicionado.\n");
+                    return;
+                }
+
+            }
+
+        }
+        if (line_index == 18)
+        {
+            strncpy(c_periodo, buffer, 100);
+            fgets(buffer,100,fp);
+            fgets(buffer,100,fp);
+            strncpy(c_entrada, buffer, 7);
+            c_entrada[6] = '\0';
+
+            line_index = line_index +2;
+        }
+        if (line_index == 24)
+        {
+            strncpy(c_situacao, buffer, 6);
+            c_situacao[5] = '\0';
+            situacao = !strcmp(c_situacao,"Ativa");
+
+            //printf("em line 24 c_entrada = %s", c_entrada);
+
+            strncpy(c_ano_entrada, c_entrada, 5);
+            c_ano_entrada[4] = '\0';
+
+            ano_entrada = atoi(c_ano_entrada);
+            semestre_entrada = atoi(&c_entrada[5]);
+
+            novo_aluno = aluno_new(nome, matricula, id_curso, id_grade, ano_entrada, semestre_entrada, situacao, lista_de_mc);
+        }
+
+        if(lista_de_uc != NULL){
+
+            searching_node = dll_get_head(lista_de_uc);
+
+            for(i = 0; i<(mc_node_get_uc_node_total(mc_node))-1; i++)
+            {
+
+                uc_codigo = (char*)uc_node_get_codigo(searching_node);
+
+
+                strncpy(codigobuffer, buffer,9);
+                codigobuffer[8] = '\0';
+              //  printf("codigobuffer: %s\n", codigobuffer);
+
+
+
+                if (!(strcmp(codigobuffer, uc_codigo)))
+                {
+
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+
+                    strncpy(c_disp_turma, buffer, 7);
+                    disp_turma = atoi(c_disp_turma);
+
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+
+                    disp_conceito = atoi(&buffer[0]);
+                    if(buffer[0]=='E')
+                        disp_conceito = 10;
+                    if(buffer[0]=='P')
+                        disp_conceito = 8;
+                    if(buffer[0]=='S')
+                        disp_conceito = 6;
+                    if(buffer[0]=='I')
+                        disp_conceito = 4;
+
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+
+                    strncpy(c_disp_falta, buffer, 3);
+                    disp_falta = atoi(c_disp_falta);
+
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+
+                    strncpy(c_disp_frequencia, buffer, 3);
+                    disp_frequencia = atoi(c_disp_frequencia);
+
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+
+                    strncpy(c_origem, buffer,7);
+                    c_origem[6] = '\0';
+                    disp_origem = !strcmp(c_origem,"Normal");
+                   // if (disp_origem!= 1)
+                       // disp_origem = 0;
+
+                    fgets(buffer,100,fp);
+                    fgets(buffer,100,fp);
+
+                    strncpy(c_disp_situacao, buffer,5);
+                    c_disp_situacao[4] = '\0';
+                    disp_situacao = !strcmp(c_disp_situacao,"Apto");
+
+                    //printf("ENTROUUUU");
+
+                    aluno_discip_new(novo_aluno, (uint8_t*)uc_codigo, (uint16_t)disp_turma, (float)disp_conceito, (uint8_t)disp_falta, (float)disp_frequencia, (uint8_t)disp_origem, (uint8_t)disp_situacao);
+                }
+
+
+                searching_node = node_get_next(searching_node);
+            }
+        }
+        line_index++;
+
+    }
+    strncpy(c_ano_entrada, c_entrada, 5);
+    c_ano_entrada[4] = '\0';
+
+    ano_entrada = atoi(c_ano_entrada);
+    semestre_entrada = atoi(&c_entrada[5]);
+
+    novo_aluno->ano_entrada = ano_entrada;
+    novo_aluno->semestre_entrada = semestre_entrada;
+
+    fclose(fp);
+
+    printf("\nVetor_alunos: %d\n", &vetor_alunos);
+    for(i=0;i<alunos_qty;i++)
+        printf("&Vetor_alunos[%d]: %d\n",i, &vetor_alunos[i]);
+
+
+    vetor_alunos = realloc(vetor_alunos, sizeof(aluno_t*) * (alunos_qty+1) );
+    if (vetor_alunos == NULL){
+        perror("ERROR: at aluno_load_from_csv() - realloc for vetor_alunos");
         exit(EXIT_FAILURE);
     }
 
 
-    fclose(fp);
+    vetor_alunos[alunos_qty] = novo_aluno;
+    alunos_qty++;
+
+   // for(i=0;i<alunos_qty;i++)
+     //   aluno_print(vetor_alunos[i]);
+
+    printf("\nVetor_alunos: %d\n", &vetor_alunos);
+    for(i=0;i<alunos_qty;i++)
+        printf("&Vetor_alunos[%d]: %d\n",i, &vetor_alunos[i]);
+
+    *alunos_qty_p = alunos_qty;
+
+    return;
 }
 
 //file functions
@@ -494,7 +722,7 @@ aluno_t** aluno_load_from_csv(uint32_t* alunos_qty_p, uint8_t* file_name, dll_t*
                     exit(EXIT_FAILURE);
                 }
             } else {
-                vetor_alunos = (aluno_t**)realloc(vetor_alunos, sizeof(aluno_t*)*alunos_qty+1);
+                vetor_alunos = (aluno_t**)realloc(vetor_alunos, sizeof(aluno_t*)*(alunos_qty+1));
                 if (vetor_alunos == NULL){
                     perror("ERROR: at aluno_load_from_csv() - realloc for vetor_alunos");
                     exit(EXIT_FAILURE);

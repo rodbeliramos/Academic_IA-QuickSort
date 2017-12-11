@@ -106,7 +106,7 @@ int main()
 
                 if (fp == NULL) // Verificação de erro
                 {
-                    /* Imprime erro e aborta */
+                    // Imprime erro e aborta
                     perror("Erro em ler_arquivo: fopen\n"); //mensagem de erro
                     valid_input = 0;
 
@@ -165,10 +165,10 @@ int main()
     for(i=0; i<qtd_alunos;i++)
     {
     aluno_delete(vetor_alunos[i]);           //deleta aluno e cada disciplina cursada do aluno.
+    }
+    free(vetor_alunos);
     mc_node_delete(mc_eng);         //deleta matriz curricular e cada unidade curricular dentro dela.
     mc_node_delete(mc_sis_elet);    //deleta matriz curricular e cada unidade curricular dentro dela.
     dll_delete(lista_de_mc);
-
-    }
     return 0;
 }
