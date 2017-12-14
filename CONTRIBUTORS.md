@@ -3,8 +3,8 @@
 Todas as contribuições deste projeto, tanto da parte estrutural quanto da parte funcional foram planejadas e discutidas em equipe. Muitas vezes, ambos os contribuidores tiveram de alterar o código implementado pelo o outro.
 
 <p><h3>Rafael Fernando Reis</h3>
-Graduando em Engenharia Eletrônica
-<a href="mailto:reis.rafael.fernando@gmail.com">reis.rafael.fernando@gmail.com</a>
+Graduando em Engenharia Eletrônica</br>
+<a href="mailto:reis.rafael.fernando@gmail.com">reis.rafael.fernando@gmail.com</a></br>
 <b>Responsável pela parte funcional do projeto</b>
 </p>
 
@@ -30,8 +30,8 @@ Graduando em Engenharia Eletrônica
 			particionar()
 
 <p><h3>Rodrigo Belisário Ramos</h3>
-Tecnólogo em Sistemas Eletrônicos e Graduando em Engenharia Eletrônica.
-<a href="mailto:rodbelisario@gmail.com">rodbelisario@gmail.com</a>
+Tecnólogo em Sistemas Eletrônicos e Graduando em Engenharia Eletrônica.</br>
+<a href="mailto:rodbelisario@gmail.com">rodbelisario@gmail.com</a></br>
 <b>Resposável pela parte estrutural do projeto</b>
 </p>
 
