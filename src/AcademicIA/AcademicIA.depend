@@ -9,7 +9,7 @@
 	"matriz_curricular.h"
 	"node.h"
 
-1513034804 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\main.c
+1513257531 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\main.c
 	<stdio.h>
 	<stdlib.h>
 	"matriz_curricular.h"
@@ -57,7 +57,7 @@
 	<stdint.h>
 	"node.h"
 
-1513034541 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\aluno.c
+1513257517 source:d:\estudos\3 - ensino superior\ifsc\engenharia eletrônica\2semestre\5a_programacaodecomputadoresii\projetofinal\academic_ia\academic_ia-quicksort\src\academicia\aluno.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

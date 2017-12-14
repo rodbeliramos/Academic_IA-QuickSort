@@ -143,13 +143,21 @@ int main()
             break;
 
         case 6:
-            aluno_save_to_csv(vetor_alunos,qtd_alunos,(uint8_t*)"lista_de_alunos_2.csv");
+            aluno_save_to_csv(vetor_alunos,qtd_alunos,(uint8_t*)"lista_de_alunos.csv");
 
 
             break;
 
         case 7:
-            goto fim_do_menu;
+            for(i=0; i<qtd_alunos;i++)
+            {
+                aluno_delete(vetor_alunos[i]);           //deleta aluno e cada disciplina cursada do aluno.
+            }
+            free(vetor_alunos);
+            mc_node_delete(mc_eng);         //deleta matriz curricular e cada unidade curricular dentro dela.
+            mc_node_delete(mc_sis_elet);    //deleta matriz curricular e cada unidade curricular dentro dela.
+            dll_delete(lista_de_mc);
+            exit(EXIT_SUCCESS);
 
         case 8:
             for(i=0;i<qtd_alunos;i++){
@@ -158,17 +166,7 @@ int main()
         }
 
     }
-    fim_do_menu:
 
-           //deleta lista de matrizes curriculares.
 
-    for(i=0; i<qtd_alunos;i++)
-    {
-    aluno_delete(vetor_alunos[i]);           //deleta aluno e cada disciplina cursada do aluno.
-    }
-    free(vetor_alunos);
-    mc_node_delete(mc_eng);         //deleta matriz curricular e cada unidade curricular dentro dela.
-    mc_node_delete(mc_sis_elet);    //deleta matriz curricular e cada unidade curricular dentro dela.
-    dll_delete(lista_de_mc);
     return 0;
 }

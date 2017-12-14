@@ -1,0 +1,1362 @@
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2017/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+FNT22004
+
+Fenômeno dos Transportes
+
+2200421
+
+9.0
+
+2
+
+95%
+
+Normal
+
+Apto
+
+PRG22105
+
+Programação de Computadores II
+
+221051
+
+6.0
+
+17
+
+78.8%
+
+Normal
+
+Apto
+
+SEMESTRE 6
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+MCC22106
+
+Microcontroladores I
+
+221061
+
+9.0
+
+4
+
+95%
+
+Normal
+
+Apto
+
+SEMESTRE 7
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+SCT22107
+
+Sistemas de Controle I
+
+221071
+
+6.0
+
+10
+
+87.5%
+
+Normal
+
+Apto
+
+SEMESTRE 8
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CTS22108
+
+Ciência, Tecnologia e Sociedade
+
+221081
+
+8.0
+
+2
+
+95%
+
+Normal
+
+Apto
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+221091
+
+10.0
+
+8
+
+90%
+
+Normal
+
+Apto
+
+SEMESTRE 9
+Código
+EMP22109
+
+Nome
+Empreendedorismo e Gerenciamento de Projetos
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:49
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2016/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+MCP22105
+
+Microprocessadores
+
+221051
+
+8.0
+
+2
+
+97.5%
+
+Normal
+
+Apto
+
+PRG22105
+
+Programação de Computadores II
+
+221051
+
+5.0
+
+16
+
+80%
+
+Normal
+
+Não Apto
+
+SEMESTRE 6
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+SIS22106
+
+Sinais e Sistemas
+
+221061
+
+6.0
+
+0
+
+100%
+
+Normal
+
+Apto
+
+SEMESTRE 8
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ADM22108
+
+Administração para Engenharia
+
+221081
+
+9.0
+
+6
+
+82.4%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:49
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2016/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ELN22105
+
+Eletrônica II
+
+221051
+
+7.0
+
+4
+
+95%
+
+Normal
+
+Apto
+
+MCP22105
+
+Microprocessadores
+
+221051
+
+4.0
+
+20
+
+75%
+
+Normal
+
+Não Apto
+
+SEMESTRE 6
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+CEE22106
+
+Conversão Eletromecânica da Energia I
+
+221061
+
+8.0
+
+3
+
+96.5%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:49
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2015/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+PRG22104
+
+Programação de Computadores I
+
+221042
+
+6.0
+
+15
+
+75%
+
+Normal
+
+Apto
+
+SEMESTRE 5
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+MCP22105
+
+Microprocessadores
+
+221051
+
+5.0
+
+20
+
+75%
+
+Normal
+
+Não Apto
+
+EMG22105
+
+Eletromagnetismo I
+
+221051
+
+6.0
+
+8
+
+88.9%
+
+Normal
+
+Apto
+
+ELN22105
+
+Eletrônica II
+
+221051
+
+0.0
+
+36
+
+55%
+
+Normal
+
+Não Apto
+
+CTM22105
+
+Ciência e Tecnologia dos Materiais
+
+221051
+
+6.0
+
+8
+
+77.8%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2015/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 4
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+PIN22104
+
+Projeto Integrador II
+
+2210411
+
+6.0
+
+4
+
+90%
+
+Normal
+
+Apto
+
+PRG22104
+
+Programação de Computadores I
+
+2210411
+
+4.0
+
+9
+
+85%
+
+Normal
+
+Não Apto
+
+CEL22104
+
+Circuitos Elétricos III
+
+2210411
+
+7.0
+
+6
+
+90%
+
+Normal
+
+Apto
+
+ELN22104
+
+Eletrônica I
+
+2210411
+
+7.0
+
+8
+
+90%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2014/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 3
+Código
+
+Nome
+
+FSC22003
+
+Fundamentos de Física em Eletricidade
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+2200321
+
+S
+
+16
+
+86%
+
+Normal
+
+Apto
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+SEMESTRE 4
+Código
+
+Nome
+
+PRG22104
+
+Programação de Computadores I
+
+2210411
+
+I
+
+21
+
+65%
+
+Normal
+
+Não Apto
+
+CEL22104
+
+Circuitos Elétricos III
+
+2210411
+
+I
+
+6
+
+90.3%
+
+Normal
+
+Não Apto
+
+CAL22104
+
+Equações diferenciais
+
+2210411
+
+S
+
+14
+
+82.5%
+
+Normal
+
+Apto
+
+ARQ22104
+
+Arquitetura de Computadores
+
+2210411
+
+S
+
+10
+
+75%
+
+Normal
+
+Apto
+
+ELN22104
+
+Eletrônica I
+
+2210411
+
+I
+
+14
+
+82.5%
+
+Normal
+
+Não Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2014/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 2
+Código
+
+Nome
+
+FSC22002
+
+Fundamentos de Física em Mecânica
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+2200221A
+
+S
+
+8
+
+93.3%
+
+Normal
+
+Apto
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+SEMESTRE 3
+Código
+
+Nome
+
+SEG22103
+
+Aspectos de Segurança em Eletricidade
+
+2210311
+
+P
+
+4
+
+90%
+
+Normal
+
+Apto
+
+CAV22103
+
+Cálculo Vetorial
+
+2210311
+
+S
+
+13
+
+83.8%
+
+Normal
+
+Apto
+
+CEL22103
+
+Circuitos Elétricos II
+
+2210311
+
+S
+
+5
+
+88.9%
+
+Normal
+
+Apto
+
+ETP22103
+
+Estatística e Probabilidade
+
+2210311
+
+P
+
+8
+
+86.7%
+
+Normal
+
+Apto
+
+MEP22103
+
+Metodologia de Pesquisa
+
+2210311
+
+S
+
+6
+
+85%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2013/2
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 2
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+ALG22102
+
+Álgebra Linear
+
+2210211
+
+P
+
+3
+
+95%
+
+Normal
+
+Apto
+
+CEL22102
+
+Circuitos Elétricos I
+
+2210211
+
+P
+
+0
+
+100%
+
+Normal
+
+Apto
+
+DST22102
+
+Desenho Técnico
+
+2210231
+
+S
+
+0
+
+100%
+
+Normal
+
+Apto
+
+ELD22102
+
+Eletrônica Digital II
+
+2210211
+
+P
+
+6
+
+92.5%
+
+Normal
+
+Apto
+
+FFM22102
+
+Fundamentos de Física em Mecânica
+
+2210211
+
+I
+
+16
+
+86.2%
+
+Normal
+
+Não Apto
+
+CAB22102
+
+Cálculo B
+
+2210211
+
+S
+
+0
+
+100%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:50
+
+INSTITUTO FEDERAL DE SANTA CATARINA
+Câmpus Florianópolis-Centro
+
+Boletim Escolar
+
+Curso:
+
+221 - Curso de Graduação em Engenharia Eletrônica
+
+Grade:
+
+1 - Matriz Curricular - 2013/1
+
+Aluno(a):
+
+1310036004 - ALEXSANDRO GEHLEN
+
+Período:
+
+2013/1
+
+Situação do Aluno no Período:
+
+Ativa
+
+Unidade Curriculares:
+SEMESTRE 1
+Código
+
+Nome
+
+Turma
+
+Conceito
+
+Faltas
+
+Frequência
+
+Origem
+
+Situação
+
+GMT22101
+
+Geometria Analítica
+
+2210112
+
+S
+
+5
+
+90.9%
+
+Normal
+
+Apto
+
+ELD22101
+
+Eletrônica Digital I
+
+2210112
+
+S
+
+10
+
+87.5%
+
+Normal
+
+Apto
+
+EGS22101
+
+Engenharia e Sustentabilidade
+
+2210112
+
+S
+
+0
+
+100%
+
+Normal
+
+Apto
+
+COM22101
+
+Comunicação e Expressão
+
+2210112
+
+S
+
+0
+
+100%
+
+Normal
+
+Apto
+
+CAL22101
+
+Cálculo A
+
+2210112
+
+S
+
+0
+
+100%
+
+Normal
+
+Apto
+
+QMG22101
+
+Química Geral
+
+2210131
+
+S
+
+0
+
+100%
+
+Normal
+
+Apto
+
+PIN22101
+
+Projeto Integrador I
+
+2210112
+
+P
+
+4
+
+90%
+
+Normal
+
+Apto
+
+Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
+Conceitos de reprovação: I (Insuficiente), NA, D.
+
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:56:50
+
+
