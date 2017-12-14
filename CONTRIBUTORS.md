@@ -3,7 +3,7 @@
 Todas as contribuições deste projeto, tanto da parte estrutural quanto da parte funcional foram planejadas e discutidas em equipe. Muitas vezes, ambos os contribuidores tiveram de alterar o código implementado pelo o outro.
 
 <p><h3>Rafael Fernando Reis</h3>
-Graduando em Engenharia Eletrônica</br>
+Técnico em Eletrônica e Graduando em Engenharia Eletrônica</br>
 <a href="mailto:reis.rafael.fernando@gmail.com">reis.rafael.fernando@gmail.com</a></br>
 <b>Responsável pela parte funcional do projeto</b>
 </p>
