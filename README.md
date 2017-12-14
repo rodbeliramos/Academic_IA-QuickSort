@@ -4,8 +4,11 @@ O projeto busca organizar uma lista de estudantes em função de seus respectivo
 # Etapas de Utilização do Programa
 
 1 - Baixar o boletim escolar em formato PDF na plataforma portal do aluno do IFSC.
+
 2 - Converter o PDF em TXT através do site www.pdftotxt.com.
+
 3 - Modificar nome do arquivo com o nome do aluno e salvar na pasta do programa.
+
 4 - Ao iniciar o programa, um menu irá apresentar 7 funções:
 
 - Buscar Aluno             -> Inserindo o código de matricula, a função imprime o boletim escolar do aluno.
