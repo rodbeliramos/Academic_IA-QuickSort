@@ -1,14 +1,15 @@
-# Contribuidores do projeto
+<h1>Contribuidores do projeto</h1>
 
 Todas as contribuições deste projeto, tanto da parte estrutural quanto da parte funcional foram planejadas e discutidas em equipe. Muitas vezes, ambos os contribuidores tiveram de alterar o código implementado pelo o outro.
 
-##Rafael Fernando Reis
-## Graduando em Engenharia Eletrônica.
-## reis.rafael.fernando@gmail.com
+<p><h3>Rafael Fernando Reis</h3>
+Graduando em Engenharia Eletrônica
+<a href="mailto:reis.rafael.fernando@gmail.com">reis.rafael.fernando@gmail.com</a>
+<b>Responsável pela parte funcional do projeto</b>
+</p>
 
-### Responsável pela parte funcional do projeto
+<h4>Implementado:</h4>
 
-Implementado: 
 	- main.c -- implementação da interface com o usuário.
 		- menu
 	- matriz_curricular.c -- implementação das funções para carregar e salvar os dados referentes as matrizes curriculares.
@@ -28,13 +29,14 @@ Implementado:
 			quicksort()
 			particionar()
 
-##Rodrigo Belisário Ramos
-## Tecnólogo em Sistemas Eletrônicos e Graduando em Engenharia Eletrônica.
-## rodbelisario@gmail.com
+<p><h3>Rodrigo Belisário Ramos</h3>
+Tecnólogo em Sistemas Eletrônicos e Graduando em Engenharia Eletrônica.
+<a href="mailto:rodbelisario@gmail.com">rodbelisario@gmail.com</a>
+<b>Resposável pela parte estrutural do projeto</b>
+</p>
 
-###Resposável pela parte estrutural do projeto)
+<h4>Implementado:</h4>
 
-Implementado:
 	- node.c -- modificação do arquivo no.c apresentado em sala de aula para funcionar em lista duplamente encadeada.
 		- funtions:
 			node_delete()
