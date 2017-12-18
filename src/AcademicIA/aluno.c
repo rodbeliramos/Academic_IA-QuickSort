@@ -185,7 +185,7 @@ void aluno_print(aluno_t* aluno)
 
     return;
 }
-
+/*
 void aluno_load_from_txt2(aluno_t** vetor_alunos, uint32_t* alunos_qty_p, dll_t* lista_de_mc)
 {
     if(vetor_alunos == NULL || alunos_qty_p == NULL || lista_de_mc == NULL)
@@ -438,7 +438,7 @@ void aluno_load_from_txt2(aluno_t** vetor_alunos, uint32_t* alunos_qty_p, dll_t*
 
     return;
 }
-
+*/
 //file functions
 aluno_t* aluno_load_from_txt(char *arquivo, FILE *fp )
 {
@@ -475,7 +475,7 @@ aluno_t* aluno_load_from_txt(char *arquivo, FILE *fp )
     char c_disp_situacao[5];
 
     node_t* mc_eng;
-    mc_eng = mc_node_load_mc((uint8_t*)"matriz_teste_eng.csv");
+    mc_eng = mc_node_load_mc((uint8_t*)"matriz_curricular_eng_eletronica.csv");
     dll_add_tail(lista_de_mc,mc_eng);
 
     dll_t* lista_de_uc = mc_node_get_uc_node_list(mc_eng);

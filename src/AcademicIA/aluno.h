@@ -27,7 +27,7 @@ void        aluno_print(aluno_t* aluno);
 
 //file functions
 aluno_t*    aluno_load_from_txt(char *arquivo, FILE *fp);
-void        aluno_load_from_txt2(aluno_t** vetor_alunos, uint32_t* alunos_qty_p, dll_t* lista_de_mc);
+//void        aluno_load_from_txt2(aluno_t** vetor_alunos, uint32_t* alunos_qty_p, dll_t* lista_de_mc);
 
 void        aluno_save_to_csv(aluno_t** vetor_alunos, uint32_t alunos_qty, uint8_t* file_name);
 aluno_t**   aluno_load_from_csv(uint32_t* alunos_qty_p, uint8_t* file_name, dll_t* lista_de_mc);

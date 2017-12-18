@@ -25,7 +25,7 @@ int main()
     dll_t* lista_de_mc;
     lista_de_mc = dll_new();
     node_t* mc_eng;
-    mc_eng = mc_node_load_mc((uint8_t*)"matriz_teste_eng.csv");
+    mc_eng = mc_node_load_mc((uint8_t*)"matriz_curricular_eng_eletronica.csv");
     node_t* mc_sis_elet;
 
     mc_sis_elet = mc_node_new((uint8_t*)"Sistemas Eletronicos", 203, 2, 2001, 2);

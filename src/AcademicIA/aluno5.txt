@@ -13,7 +13,7 @@ Grade:
 
 Aluno(a):
 
-1610118243 - SUZI YOUSIF
+0000000005 - ALUNO E
 
 Período:
 
@@ -47,7 +47,7 @@ Mecânica dos Sólidos
 
 221031
 
-10.0
+9.0
 
 2
 
@@ -79,11 +79,11 @@ Circuitos Elétricos II
 
 221032
 
-7.0
+8.0
 
-2
+0
 
-96.7%
+100%
 
 Normal
 
@@ -95,7 +95,7 @@ Aspectos de Segurança em Eletricidade
 
 221031
 
-7.0
+8.0
 
 0
 
@@ -127,11 +127,11 @@ Estatística e Probabilidade
 
 221031
 
-10.0
+9.0
 
-4
+0
 
-93.8%
+100%
 
 Normal
 
@@ -160,11 +160,11 @@ Equações diferenciais
 
 221041
 
-10.0
+9.0
 
-6
+4
 
-92.5%
+95%
 
 Normal
 
@@ -206,8 +206,8 @@ Apto
 Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
 Conceitos de reprovação: I (Insuficiente), NA, D.
 
-FLORIANÓPOLIS, 01 de Dezembro de 2017
-Este documento foi gerado às 18:16:41
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:50:23
 
 INSTITUTO FEDERAL DE SANTA CATARINA
 Câmpus Florianópolis-Centro
@@ -224,7 +224,7 @@ Grade:
 
 Aluno(a):
 
-1610118243 - SUZI YOUSIF
+1610062574 - HELOIZA MARTINS SCHABERLE
 
 Período:
 
@@ -258,11 +258,11 @@ Eletrônica Digital II
 
 221022
 
-8.0
+10.0
 
-0
+2
 
-100%
+97.5%
 
 Normal
 
@@ -274,7 +274,7 @@ Desenho Técnico
 
 221022
 
-10.0
+9.0
 
 2
 
@@ -292,9 +292,9 @@ Fundamentos de Física em Mecânica
 
 8.0
 
-4
+6
 
-96.7%
+95%
 
 Normal
 
@@ -324,9 +324,9 @@ ALG22102
 
 9.0
 
-0
+9
 
-100%
+85%
 
 Normal
 
@@ -351,8 +351,8 @@ Apto
 Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
 Conceitos de reprovação: I (Insuficiente), NA, D.
 
-FLORIANÓPOLIS, 01 de Dezembro de 2017
-Este documento foi gerado às 18:16:41
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:50:23
 
 INSTITUTO FEDERAL DE SANTA CATARINA
 Câmpus Florianópolis-Centro
@@ -369,7 +369,7 @@ Grade:
 
 Aluno(a):
 
-1610118243 - SUZI YOUSIF
+1610062574 - HELOIZA MARTINS SCHABERLE
 
 Período:
 
@@ -421,9 +421,9 @@ Geometria Analítica
 
 9.0
 
-6
+0
 
-90%
+100%
 
 Normal
 
@@ -435,11 +435,11 @@ Eletrônica Digital I
 
 221011
 
-9.0
+7.0
 
-0
+3
 
-100%
+96.3%
 
 Normal
 
@@ -467,11 +467,11 @@ Comunicação e Expressão
 
 221011
 
-9.0
+10.0
 
-2
+1
 
-95%
+97.5%
 
 Normal
 
@@ -485,9 +485,9 @@ Cálculo A
 
 9.0
 
-6
+5
 
-95%
+95.8%
 
 Normal
 
@@ -499,7 +499,7 @@ Química Geral
 
 221011
 
-9.0
+8.0
 
 0
 
@@ -512,7 +512,7 @@ Apto
 Conceitos de aprovação: E (Excelente), P (Proficiente), S (Suficiente), PA, TA, A, B, C
 Conceitos de reprovação: I (Insuficiente), NA, D.
 
-FLORIANÓPOLIS, 01 de Dezembro de 2017
-Este documento foi gerado às 18:16:41
+FLORIANÓPOLIS, 12 de Dezembro de 2017
+Este documento foi gerado às 08:50:23
 
 
